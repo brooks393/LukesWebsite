@@ -6,17 +6,28 @@
     <title>Document</title>
     <link href="style.css" rel="stylesheet">
     <script src="./script.js" defer></script>
+    
 </head>
 <body>
     <div class="main-container">
         <nav class = "container">
-            <div>
-                Image + Company
+            <div >
+                <a href="http://127.0.0.1:5500/index.html" class = "title">LCG Wealth </a>
             </div>
             <div>
-                <div class = "nav_button">
-                    <button  onclick="Client Portal">Client Portal</button>
-                    <button  onclick="Free Consult">Free Consltation</button>
+                <div class = "nav-button">
+                    <a href="https://www.linkedin.com/in/luke-cadby-gledhill-fpfs/" target="_blank" class="social-media-logo">
+                        <ion-icon name="logo-linkedin"></ion-icon>
+                    </a>
+                    <a href="#s"  class="social-media-logo">
+                        <ion-icon name="logo-instagram"></ion-icon>
+                    </a>
+                    <a class ="client-portal" href="https://auth.2plan.com/Account/Login?ReturnUrl=%2Fconnect%2Fauthorize%2Fcallback%3Fclient_id%3Dclientportal%26redirect_uri%3Dhttps%253A%252F%252Faccess.2plan.com%252Fsignin-oidc%26response_type%3Dcode%2520id_token%26scope%3Dopenid%2520profile%2520offline_access%2520clientportal_api%2520files_api%2520client%2520twofactor%2520factfind_api%2520valuations_api%2520messenger_api%26response_mode%3Dform_post%26nonce%3D638555140176693971.MDYwNDQxYmItZGExNS00ZjU3LTgzNDYtZDU0OTViZTI0Yzg0Y2FjMjk5ZGUtNWYxMy00ZTM1LWExY2QtZTM3OGViYWE2NDQw%26state%3DCfDJ8GJ-UjiuNy5MsVx-mf2oLzXyuWUE_da1nsBRRza127Td63EYkHyfF5aOzc7LnPQFdoIFmLn2WUzs1DA63_M2uRNkqEq6_S9v0CvZljfMHd-oN_BeHJwzAPk7UWN0R_7VlDeBrYD7AnQTQ0DD-QIDoB0FNvPdNd72Z-ij8DKzzXsgNOTutWrnNfdtq8AVebVzjchlBWZT3VcOOXYhDChN7pEmg0nHlyoY0CIiQUvfuGI8Wmw0hcJI0WN2GFYziTX_JhHEIHVcgzjqn-NlEVpMUZfIF2SzvK5ZakhMuP635hc4%26x-client-SKU%3DID_NET6_0%26x-client-ver%3D6.35.0.0%26acr_values%3Dlogin" target="_blank">
+                        <button  id="portal">Client Portal</button>
+                    </a>
+                    <a class ="free-quote" href="#free-quote"> <!-- target="_blank" -->
+                        <button  id="quote">Free Quotes</button>
+                    </a>
                 <div class = "ham-menu">
                     <span></span>
                     <span></span>
@@ -25,33 +36,36 @@
             </div>
             <div>
                 <div class = "off-screen-menu">
-                <ul class = "nav_link">
+                <ul class = "nav-menu">
                     <li>
                         <a>
-                            <a href="#About us">About us</a>
+                            <a href="#About us" class="nav-links">About us</a>
                         </a>
                     </li>
                     <li class="dropdown">
-                        <a href="#work" class="nav-links dropbtn" id="dropbtn">Work</a>
+                        <a href="#Our Services" class="nav-links dropbtn" id="dropbtn">Our Services ▾ </a>
                         <div class="dropdown-content">
-                        <a onclick="games()" href="#games">Games </a>
-                        <a href="#blender">Blender Models</a>
-                        <a href="#other stuff">Other Stuff</a>
+                        <a href="#Pensions & Retirement">Pensions & Retirement </a>
+                        <a href="#Savings & Investments">Savings & Investments</a>
+                        <a href="#Protection & Personal Insurance">Protection & Personal Insurance</a>
+                        <a href="#IHT & Estate Planning">IHT & Estate Planning</a>
+                        <a href="#Business & Corporate">Business & Corporate</a>
+                        <a href="#Mortgages">Mortgages</a>
                         </div>
                     </li>
                     <li>
                         <a>
-                            <a href="#How we work">How we work</a>
+                            <a href="#How we work" class="nav-links">How we work</a>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <a href="#Contact Us">Contact Us</a>
+                            <a href="#contact-us" class="nav-links">Contact Us</a>
                         </a>
                     </li>
                     <li>
                         <a>
-                            <a href="#News">News</a>
+                            <a href="#News" class="nav-links">News</a>
                         </a>
                     </li>
                     
@@ -59,14 +73,45 @@
                     
                 </div>
             </div>
-            </div>
         </nav>
-        <div class=" header1">
-            header 1
+    </div>
+    <!-- <section class="banner"></section>
+    <script type="text/javascript">
+        window.addEventListener("scroll", function(){
+            var maincontainer = document.querySelector("main-container")
+            maincontainer.classList.toggle("sticky", window.scrollY > 0)
+        } -->
+    <!-- </script> -->
+        <nav class="website-max-width">
+            <div class="home-page" id="home-page">
+                
+            “It’s not how much money you make but how much money you keep, how hard it works for you, and how many generations you keep it for”
+        Robert Kiyosaki on why people benefit from professional financial advice.
+        This is what I aim to do, to help you make good decisions about your money – providing clear information to help you achieve your financial goals.
+
+        I am part of 2plan wealth management which is a national advisory firm consisting of Financial Advisers and mortgage and protection specialists.
+
+        Being independent is part of what makes me different. It’s the reason I am free to advise you about products from the entire financial marketplace. I don’t act on behalf of any bank or insurance company. So my recommendations are solely about what’s right for you.
+
+        Working with 2plan also allows me to offer you all the benefits of a bigger organisation, such as the latest technology, greater financial strength, and the reassurance of a team of experts helping me to get things right first time.
+
+        For a conversation about your financial plans, why not get in touch today?
         </div>
-        <div class=" header2">
+        <div class=" about-us">
             header 2
         </div>
-    </div>
+        <div class=" about-us">
+            header 3
+        </div>
+        <div class=" about-us">
+            header 4
+        </div>
+        <div class=" contact-us" id="contact-us">
+            Contact Us
+        </div>
+    </nav>
+    
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
 </body>
 </html>

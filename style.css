@@ -1,3 +1,32 @@
+/* @font-face { font-family: Delicious; src: url('Awesome\ Free\ Font.otf'); } 
+@font-face { font-family: Delicious; font-weight: bold; src: url('Awesome\ Free\ Font.otf');} */
+.website-max-width {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.social-media-logo {
+    display: flex;
+    justify-content: center;
+    padding: 10px 0 0 0;
+    max-block-size: 40px;
+    font-size: x-large;
+    color: white;
+}
+
+
+.title {
+    display: flex;
+    color: white;
+    font-style: italic;
+    padding: 70px 0 0 0;
+    font-size: 45px;
+    text-decoration: none;
+ 
+}
 
 
 body {
@@ -9,69 +38,181 @@ body {
 }
 
 .main-container {
+    background-color: rgb(8, 63, 8);
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    /* position: sticky; */
+}
+
+maincontainer.sticky{
+    padding: 5px 100px;
+    background: #fff;
 }
 
 .container {
-    max-width: 1600px;
-    width: 100%;
+    max-width: 1200px;
+    width: 90%;
 }
+
+
+
 nav {
-    background-image: url('photo-1444858291040-58f756a3bdd6.avif');
+    /* background-image: url('photo-1444858291040-58f756a3bdd6.avif');
     background-size: cover;
     background-position: center;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; */
     display: flex;
     justify-content: space-between;
-    padding: 10px 40px 600px 40px;
+    padding: 20px 0px 40px 0px;
+    text-decoration: none;
 }
 
-.nav_link {
-    display: flex;
-    flex-direction: row;
-    gap: 40px;
-    list-style: none;
-}
-.nav_button {
+
+
+.nav-links {
+    font-size: 20px;
+    color: peachpuff;
+    text-decoration: none;
+  }
+
+.nav-button {
     display: flex;
     justify-content: end;
-    gap: 10px;
+    gap: 26px;
+    border: none;
+    width: 100%;
 }
 
-.nav_button button {
-    padding: 10px 5px 10px 5px;
+.nav-button .client-portal button {
+    padding: 15px 15px 15px 15px;
+    background-color: peachpuff;
+    color: black;
+    word-spacing: 0.5px;
+    letter-spacing: 0.6px;
+    border-radius: 15px;
+    
+}
+
+.nav-button .client-portal button:hover {
+    background-color: rgb(134, 165, 243);
+    /* color: rgb(134, 165, 243); */
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+  }
+
+.nav-button .free-quote button {
+    padding: 15px 15px 15px 15px;
+    background-color: rgb(134, 165, 243);
+    word-spacing: 0.5px;
+    letter-spacing: 0.6px;
+    border-radius: 15px;
+}
+
+.nav-button .free-quote button:hover {
+    background-color: peachpuff;
+    /* color: rgb(134, 165, 243); */
+    transition: all 0.2s ease-out;
+    font-weight: bold;
+  }
+
+.nav-links:hover {
+    color: rgb(169, 191, 246);
+    transition: all 0.2s ease-out;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: row;
+    gap: 35px;
+    list-style: none;
+    text-decoration: none;
+    padding: 10px 0px 0 0;    
+}
+
+/* .menu-toggle .bar {
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    transition: all 0.3s ease-in-out;
+    background: white;
+   
+  }
+  
+  .nav-menu.active {
+    background: darkgray;
+    left: 0;
+    opacity: 1;
+    transition: all 0.5s ease;
+}
+
+@media screen and (max-width: 768px) {
+    .main-container{
+        position: relative;
+    }
+    .nav-menu {
+    
+        display: grid;
+        grid-template-columns: auto;
+        background: red;
+        margin: 0;
+        width: 80%;
+        position: absolute;
+        top: 80px;
+        transition: all 0.5s ease;
+    } */
+li {
+    float: left;
+}
+
+li a, .dropbtn {
+    display: inline-block;
+    color: peachpuff;
+    text-align: center;
+    text-decoration: none;
+}
+
+li.dropdown {
+    display: inline-block;
 }
 
 .dropdown-content {
     display: none;
+    position:absolute;
+    background-color: rgb(8, 63, 8);
+    border-style:solid;
+    border-radius: 5px;
+    /* min-width: 160px; */
+    box-shadow: 2px 8px 16px 2px rgba(0,0,0,0.2);
+    z-index: 1;
 }
 
-.show {
-    display: flex;
-    gap: 10px
+.dropdown-content a {
+    color: white;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
 }
 
-.dropdown:hover {
-    color: rgb(134, 165, 243);
-    transition: all 0.2s ease-out;
-  }
+.dropdown-content a:hover {color: rgb(134, 165, 243);}
 
-
+.dropdown:hover .dropdown-content {
+    display: block;
+}
 
 .ham-menu {
     height: 50px;
     width: 50px;
-    margin-left: 50px;
+    margin-left: 20px;
     position: relative;
 }
 
 .ham-menu span {
     height: 5px;
-    width: 100%;
-    background-color: blue;
+    width: 90%;
+    background-color: rgb(134, 165, 243);
     border-radius: 25px;
     position: absolute;
     top: 50%;
@@ -103,6 +244,17 @@ nav {
 }
 
 
-.header1 {
-    padding: 400px 10px;
+.home-page {
+    max-width: 1200px;
+    width: 90%;
+    padding: 50px;
+}
+
+.about-us {
+    background-image: url(Chartered_FinancialPlanner/Chartered_Financial_Planner/Standard_Size/Standard_Size_Gold/RGB/Chartered_Standard_FP_Gold_RGB.png);
+    padding: 1000px 10px;
+}
+
+.contact-us {
+    padding: 0px
 }
