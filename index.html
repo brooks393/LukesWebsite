@@ -6,23 +6,52 @@
     <title>Home — Luke Cadby-Gledhill Wealth</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/script.js" defer></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="shadow-md page-center">
+    <nav class="shadow-md page-center bg-green">
       <div class="flex space-between container">
-        <div>Logo</div>
-        <div>
-          <div class="flex space-between">
-            <a href="#">Client Portal</a>
-            <a href="#">Free Quote</a>
+        <img
+          src="./assets/img/logo.png"
+          alt="Luke Cadby-Gledhill Wealth logo"
+          class="navigation-logo"
+        />
+        <div class="flex flex-col align-vertically gap-md">
+          <div class="flex space-right gap-md">
+            <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
+              >Client Portal</a
+            >
+            <a href="/contact" class="btn btn-lg bg-black shadow-sm rounded-md"
+              >Free Quote</a
+            >
           </div>
-          <div class="flex gap-md">
-            <a href="#">About us</a>
-            <a href="#">Our Services</a>
-            <a href="#">How We Work</a>
-            <a href="#">News</a>
-            <a href="#">Contact Us</a>
+          <div>
+            <ul class="flex gap-md">
+              <li><a href="/about">About us</a></li>
+              <li class="relative">
+                <a href="/services" class="services-dropdown-link"
+                  >Our Services</a
+                >
+                <div
+                  class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
+                >
+                  <a href="#">Link 1</a>
+                  <a href="#">Link 2</a>
+                  <a href="#">Link 3</a>
+                </div>
+              </li>
+              <li>
+                <a href="/how-we-work">How We Work</a>
+              </li>
+              <li><a href="/news">News</a></li>
+              <li><a href="/contact">Contact us</a></li>
+            </ul>
           </div>
         </div>
       </div>
@@ -54,7 +83,9 @@
     <!-- Image -->
     <img src="" alt="" />
     <section class="container page-center">
-      <div></div>
+      <div>
+        <h2></h2>
+      </div>
       <div></div>
     </section>
     <section></section>

@@ -7,14 +7,35 @@
   font: inherit;
 }
 
+:root {
+  /* Colours */
+  --color-green: rgb(75, 69, 55);
+  --color-black: rgb(0, 0, 0);
+
+  /* Fonts */
+  --font-montserrat: "montserrat", sans-serif;
+}
+
+body {
+  font-family: var(--font-montserrat);
+}
+
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
 /* General utilities */
 
 .container {
   width: 100%;
   max-width: min(
     90%,
-    75rem
-  ); /* 1200px is the width of the page or 90% of the screen on mobile */
+    85rem
+  ); /* 1360px is the width of the page or 90% of the screen on mobile */
 }
 
 .page-center {
@@ -24,10 +45,22 @@
   width: 100%;
 }
 
+a {
+  color: white;
+}
+
 /* Flexbox */
 
 .flex {
   display: flex;
+}
+
+.flex-row {
+  flex-direction: row;
+}
+
+.flex-col {
+  flex-direction: column;
 }
 
 .space-between {
@@ -36,6 +69,18 @@
 
 .space-around {
   justify-content: space-around;
+}
+
+.space-right {
+  justify-content: end;
+}
+
+.align-vertically {
+  justify-content: center;
+}
+
+.relative {
+  position: relative;
 }
 
 /* Page styling */
@@ -48,8 +93,53 @@
   text-transform: uppercase;
 }
 
+.bg-green {
+  background-color: var(--color-green);
+}
+
+.bg-black {
+  background-color: var(--color-black);
+}
+
+.rounded-md {
+  border-radius: 4px;
+}
+
 /* Spacing */
 
 .gap-md {
-  gap: 1rem;
+  gap: 1.5rem;
+}
+.gap-sm {
+  gap: 0.5rem;
+}
+
+/* Buttons */
+
+.btn.btn-lg {
+  padding: 1rem 0.5rem;
+}
+
+/* Individial elements */
+
+.navigation-logo {
+  width: 8.75rem; /* 140px /*
+  /* height: 150px; */
+  padding-block: 1rem;
+}
+
+.services-dropdown-content {
+  padding: 1rem;
+  position: absolute;
+  background-color: var(--color-green);
+  left: -1rem;
+  top: calc(100% + 0.25rem);
+  opacity: 1;
+  min-width: calc(100% + 2rem);
+  transition: all 0.5s;
+}
+
+.services-dropdown-content.hide {
+  opacity: 0 !important;
+  top: 100%;
 }

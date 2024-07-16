@@ -1,34 +1,37 @@
-const navbarDropdownLink = document.querySelector('#dropbtn')
-const navbarDropdownContent = document.querySelector(".dropdown-content")
+// Link Dropdown
+const servicesDropdownLink = document.querySelector(".services-dropdown-link");
+const servicesDropdownContent = document.querySelector(
+  ".services-dropdown-content"
+);
 
-const menu = document.querySelector('#mobile-menu');
-const menuLinks = document.querySelector('.nav-menu');
+function cancelDropdown() {
+  // Cancel the popout
+  clearTimeout(dropdownTimeout);
+  servicesDropdownContent.classList.add("hide");
+}
 
-navbarDropdownLink.addEventListener("click", function (e) {
-    navbarDropdownContent.classList.toggle("show")
-    console.log("Hello World")
-})
+function handleDropdown() {
+  // If the user moves away within the specifc time
+  servicesDropdownLink.addEventListener("mouseout", cancelDropdown);
+  servicesDropdownLink.addEventListener("focusout", cancelDropdown);
 
-menu.addEventListener('click', () => {
-    menu.classList.toggle('is-active');
-    menuLinks.classList.toggle('active');
-})
+  // Only display the popout after a specific time
+  dropdownTimeout = setTimeout(() => {
+    servicesDropdownLink.removeEventListener("mouseout", cancelDropdown);
+    servicesDropdownLink.removeEventListener("focusout", cancelDropdown);
+    servicesDropdownContent.classList.remove("hide");
 
-// keep track of previous scroll position
-let prevScrollPos = window.pageXOffset;
+    while (
+      servicesDropdownContent.matches(":hover") !== false ||
+      (servicesDropdownContent.matches(":focus") !== false &&
+        servicesDropdownLink.matches(":hover") !== false) ||
+      servicesDropdownLink.matches(":focus") !== false
+    ) {
+      console.log("Hello World");
+    }
+  }, 250);
+}
 
-window.addEventListener('scroll', function() {
-  // current scroll position
-  const currentScrollPos = window.pageYOffset;
-
-  if (prevScrollPos > currentScrollPos) {
-    // user has scrolled up
-    document.querySelector('.main-container').classList.add('show');
-  } else {
-    // user has scrolled down
-    document.querySelector('.main-container').classList.remove('show');
-  }
-
-  // update previous scroll position
-  prevScrollPos = currentScrollPos;
-});
+// Detect when the services link is highlighted
+servicesDropdownLink.addEventListener("mouseover", handleDropdown);
+servicesDropdownLink.addEventListener("focusin", handleDropdown);
