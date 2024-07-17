@@ -19,6 +19,7 @@
 
 body {
   font-family: var(--font-montserrat);
+  color: white;
 }
 
 a {
@@ -202,7 +203,6 @@ nav.navigation-minimal .navigation-buttons {
   margin: 7.5px auto;
   border-radius: 1px;
   background-color: var(--color-white);
-  transition: transform 0.05s, opacity 0.05s;
 }
 
 .navigation-menu.navigation-active .navigation-bar:nth-child(1) {
@@ -217,9 +217,43 @@ nav.navigation-minimal .navigation-buttons {
   transform: translateY(-10.5px) rotate(-45deg);
 }
 
+/* Heading */
+
+.landing-header-title {
+  font-family: Abel, sans-serif;
+  font-size: 5rem;
+}
+
+.landing-header-subtitle {
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+.landing-header-paragraph {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.landing-background {
+  background-image: url(/assets//img/background.png);
+  background-size: cover;
+  background-position: 500px 0;
+  background-color: var(--color-green);
+  min-height: 45vh;
+}
+
+/* Landing image */
+
+.landing-image-section {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+}
+
 /* Media Queries */
 
 @media (max-width: 768px) {
+  /* Navigation bar */
   .navigation-links {
     display: flex;
     flex-direction: column;

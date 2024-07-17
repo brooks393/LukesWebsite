@@ -12,10 +12,16 @@
       href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <!-- Navigation bar -->
-    <nav class="shadow-md page-center bg-green">
+    <nav class="shadow-md page-center bg-green relative">
       <div class="flex space-between container">
         <img
           src="./assets/img/logo.png"
@@ -64,31 +70,37 @@
       </div>
     </nav>
     <!-- Header -->
-    <header>
-      <div>
-        <div>
-          <h1 class="uppercase landing-header-title">LCG Wealth</h1>
-          <h2 class="uppercase landing-header-subtitle">
-            Bespoke Independent Financial Advice
-          </h2>
-          <p class="uppercase landing-header-paragraph">
-            Tailored solutions to achieve your long-term financial goals
-            together
-          </p>
+    <header class="landing-background page-center">
+      <div class="container">
+        <div class="flex flex-column">
+          <div>
+            <h1 class="uppercase landing-header-title">LCG Wealth</h1>
+            <h2 class="uppercase landing-header-subtitle">
+              Bespoke Independent Financial Advice
+            </h2>
+            <p class="uppercase landing-header-paragraph">
+              Tailored solutions to achieve your long-term financial goals
+              together
+            </p>
+          </div>
+          <div>
+            <p>Logo</p>
+          </div>
         </div>
-        <div>
-          <p>Logo</p>
+        <!-- Links at bottom of header -->
+        <div class="flex space-around">
+          <a href="#" class="uppercase">Face-to-Face</a>
+          <a href="#" class="uppercase">Online</a>
+          <a href="#" class="uppercase">Telephone</a>
         </div>
-      </div>
-      <!-- Links at bottom of header -->
-      <div class="flex space-around">
-        <a href="#" class="uppercase">Face-to-Face</a>
-        <a href="#" class="uppercase">Online</a>
-        <a href="#" class="uppercase">Telephone</a>
       </div>
     </header>
     <!-- Image -->
-    <img src="" alt="" />
+    <img
+      src="/assets/img/careers-in-consulting.png"
+      alt="Photo of a meeting in an office"
+      class="landing-image-section"
+    />
     <section class="container page-center">
       <div>
         <h2></h2>
