@@ -23,7 +23,7 @@
           class="navigation-logo"
         />
         <div class="flex flex-col align-vertically gap-md">
-          <div class="flex space-right gap-md">
+          <div class="flex space-right gap-md navigation-buttons">
             <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
               >Client Portal</a
             >
@@ -32,25 +32,32 @@
             >
           </div>
           <div>
-            <ul class="flex gap-md">
-              <li><a href="/about">About us</a></li>
-              <li class="relative">
+            <div class="navigation-menu">
+              <button aria-label="Toggle menu">
+                <span class="navigation-bar"></span>
+                <span class="navigation-bar"></span>
+                <span class="navigation-bar"></span>
+              </button>
+            </div>
+            <ul class="flex gap-md navigation-links">
+              <li class="navigation-link"><a href="/about">About us</a></li>
+              <li class="relative navigation-link">
                 <a href="/services" class="services-dropdown-link"
                   >Our Services</a
                 >
                 <div
                   class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
                 >
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
+                  <a href="#" class="services-dropdown-link">Link 1</a>
+                  <a href="#" class="services-dropdown-link">Link 2</a>
+                  <a href="#" class="services-dropdown-link">Link 3</a>
                 </div>
               </li>
-              <li>
+              <li class="navigation-link">
                 <a href="/how-we-work">How We Work</a>
               </li>
-              <li><a href="/news">News</a></li>
-              <li><a href="/contact">Contact us</a></li>
+              <li class="navigation-link"><a href="/news">News</a></li>
+              <li class="navigation-link"><a href="/contact">Contact us</a></li>
             </ul>
           </div>
         </div>
