@@ -19,9 +19,9 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body class="flex flex-col page-center">
     <!-- Navigation bar -->
-    <nav class="shadow-md page-center bg-green relative">
+    <nav class="shadow-md page-center bg-green relative fixed">
       <div class="flex space-between container">
         <img
           src="./assets/img/logo.png"
@@ -73,7 +73,7 @@
     <header class="landing-background page-center">
       <div class="container">
         <div class="flex flex-column">
-          <div>
+          <div class="flex flex-col align-vertically flex-equal">
             <h1 class="uppercase landing-header-title">LCG Wealth</h1>
             <h2 class="uppercase landing-header-subtitle">
               Bespoke Independent Financial Advice
@@ -83,15 +83,15 @@
               together
             </p>
           </div>
-          <div>
-            <p>Logo</p>
+          <div class="flex space-right flex-equal">
+            <img src="/assets/img/logo-minimal.png" alt="" />
           </div>
         </div>
         <!-- Links at bottom of header -->
-        <div class="flex space-around">
-          <a href="#" class="uppercase">Face-to-Face</a>
-          <a href="#" class="uppercase">Online</a>
-          <a href="#" class="uppercase">Telephone</a>
+        <div class="flex space-around landing-header-bottom">
+          <p href="#" class="uppercase">Face-to-Face</p>
+          <p href="#" class="uppercase">Online</p>
+          <p href="#" class="uppercase">Telephone</p>
         </div>
       </div>
     </header>
@@ -101,15 +101,310 @@
       alt="Photo of a meeting in an office"
       class="landing-image-section"
     />
-    <section class="container page-center">
-      <div>
-        <h2></h2>
+    <section class="container relative">
+      <div class="flex flex-row gap-md divider-block">
+        <div class="flex-equal flex flex-col gap-md">
+          <h2 class="landing-bullets-title uppercase">LCG Wealth</h2>
+          <div class="grid grid-col-2 gap-sm align-center h-100">
+            <img
+              src="/assets/img/tree-plant.png"
+              alt="Small tree in pot"
+              class="flex-equal landing-bullets-image shadow-md"
+            />
+            <a
+              href="#"
+              class="bg-black w-100 flex-equal landing-bullets-button shadow-md flex align-center h-100"
+            >
+              Book Your Free Initial Consultation
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col flex-equal gap-md">
+          <h3 class="landing-bullets-subtitle uppercase">
+            Improving your financial future
+          </h3>
+          <p>
+            Tailored solutions to achieve your long-term financial goals
+            together
+          </p>
+          <p>
+            Here at LCG Wealth we specialise in providing holistic whole of
+            market advice to all our clients be it
+          </p>
+          <ul class="landing-bullets-list">
+            <li><a href="#">Pensions & Retirement Planning</a></li>
+            <li><a href="#">Savings & Investments</a></li>
+            <li><a href="#">Personal & Family Protection</a></li>
+            <li><a href="#">IHT & Estate Planning</a></li>
+            <li><a href="#">Business & Corporate Advice</a></li>
+            <li><a href="#">Morgages</a></li>
+          </ul>
+        </div>
       </div>
-      <div></div>
     </section>
-    <section></section>
-    <section></section>
-    <section></section>
-    <footer></footer>
+    <section class="container">
+      <h2 class="landing-explore-title uppercase">Explore Us Further</h2>
+      <div class="grid grid-col-4 gap-md w-100 landing-explore-cards">
+        <a href="/about" class="shadow-md">
+          <img
+            src="/assets/img/luke-and-scoobs.png"
+            alt="Man and dog in the forest"
+            class="w-100"
+          />
+          <span>About us</span>
+        </a>
+        <a href="/how-we-work" class="shadow-md">
+          <img
+            src="/assets/img/luke-and-scoobs.png"
+            alt="Man and dog in the forest"
+            class="w-100"
+          />
+          <span>How we work</span>
+        </a>
+        <a href="/services" class="shadow-md">
+          <img
+            src="/assets/img/luke-and-scoobs.png"
+            alt="Man and dog in the forest"
+            class="w-100"
+          />
+          <span>Services</span>
+        </a>
+        <a href="/contact" class="shadow-md">
+          <img
+            src="/assets/img/luke-and-scoobs.png"
+            alt="Man and dog in the forest"
+            class="w-100"
+          />
+          <span>Contact us</span>
+        </a>
+      </div>
+    </section>
+    <section class="container relative">
+      <div class="divider-block">
+        <h2 class="landing-value-title uppercase">Our Values</h2>
+        <div
+          class="landing-value-cards flex flex-row flex-wrap align-vertically gap-md"
+        >
+          <div
+            class="flex flex-row align-center align-vertically gap-md shadow-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-80q-139-35-229.5-159.5T160-516v-244l320-120 320 120v244q0 152-90.5 276.5T480-80Zm0-84q97-30 162-118.5T718-480H480v-315l-240 90v207q0 7 2 18h238v316Z"
+              />
+            </svg>
+            <h3 class="uppercase">Protection</h3>
+          </div>
+          <div
+            class="flex flex-row align-center align-vertically gap-md shadow-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M160-160v-280 280Zm640 0v-280 280Zm-40-480q17 0 28.5-11.5T800-680q0-17-11.5-28.5T760-720q-17 0-28.5 11.5T720-680q0 17 11.5 28.5T760-640Zm0 80q-51 0-85.5-34.5T640-680q0-50 34.5-85t85.5-35q50 0 85 35t35 85q0 51-35 85.5T760-560ZM480-680q25 0 42.5-17t17.5-43q0-25-17.5-42.5T480-800q-26 0-43 17.5T420-740q0 26 17 43t43 17Zm0 80q-59 0-99.5-40.5T340-740q0-58 40.5-99t99.5-41q58 0 99 41t41 99q0 59-41 99.5T480-600ZM320-425q0 30 32 70t128 127q94-85 127-125t33-72q0-23-15-39t-37-16q-14 0-26.5 6T541-457l-48 57h-27l-48-57q-8-11-20.5-17t-25.5-6q-23 0-37.5 16T320-425Zm-80 0q0-53 36-94t96-41q31 0 59.5 14t48.5 38q20-24 48-38t60-14q60 0 96 41.5t36 93.5q0 53-38.5 104.5T524-160l-44 40-44-40Q315-270 277.5-321T240-425Zm-40-215q17 0 28.5-11.5T240-680q0-17-11.5-28.5T200-720q-17 0-28.5 11.5T160-680q0 17 11.5 28.5T200-640ZM483-80v-80h317v-280H682v-80h118q33 0 56.5 23.5T880-440v360H483Zm-323-80h323v80H80v-360q0-33 23-56.5t57-23.5h118v80H160v280Zm40-400q-51 0-85.5-34.5T80-680q0-50 34.5-85t85.5-35q50 0 85 35t35 85q0 51-35 85.5T200-560Zm280-180Zm-280 60Zm560 0Z"
+              />
+            </svg>
+            <h3 class="uppercase">Support</h3>
+          </div>
+          <div
+            class="flex flex-row align-center align-vertically gap-md shadow-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M40-160v-112q0-34 17.5-62.5T104-378q62-31 126-46.5T360-440q66 0 130 15.5T616-378q29 15 46.5 43.5T680-272v112H40Zm720 0v-120q0-44-24.5-84.5T666-434q51 6 96 20.5t84 35.5q36 20 55 44.5t19 53.5v120H760ZM360-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47Zm400-160q0 66-47 113t-113 47q-11 0-28-2.5t-28-5.5q27-32 41.5-71t14.5-81q0-42-14.5-81T544-792q14-5 28-6.5t28-1.5q66 0 113 47t47 113ZM120-240h480v-32q0-11-5.5-20T580-306q-54-27-109-40.5T360-360q-56 0-111 13.5T140-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T440-640q0-33-23.5-56.5T360-720q-33 0-56.5 23.5T280-640q0 33 23.5 56.5T360-560Zm0 320Zm0-400Z"
+              />
+            </svg>
+            <h3 class="uppercase">Independence</h3>
+          </div>
+          <div
+            class="flex flex-row align-center align-vertically gap-md shadow-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M480-120 200-272v-240L40-600l440-240 440 240v320h-80v-276l-80 44v240L480-120Zm0-332 274-148-274-148-274 148 274 148Zm0 241 200-108v-151L480-360 280-470v151l200 108Zm0-241Zm0 90Zm0 0Z"
+              />
+            </svg>
+            <h3 class="uppercase">Expertise</h3>
+          </div>
+          <div
+            class="flex flex-row align-center align-vertically gap-md shadow-md"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              height="24px"
+              viewBox="0 -960 960 960"
+              width="24px"
+              fill="#e8eaed"
+            >
+              <path
+                d="M475-160q4 0 8-2t6-4l328-328q12-12 17.5-27t5.5-30q0-16-5.5-30.5T817-607L647-777q-11-12-25.5-17.5T591-800q-15 0-30 5.5T534-777l-11 11 74 75q15 14 22 32t7 38q0 42-28.5 70.5T527-522q-20 0-38.5-7T456-550l-75-74-175 175q-3 3-4.5 6.5T200-435q0 8 6 14.5t14 6.5q4 0 8-2t6-4l136-136 56 56-135 136q-3 3-4.5 6.5T285-350q0 8 6 14t14 6q4 0 8-2t6-4l136-135 56 56-135 136q-3 2-4.5 6t-1.5 8q0 8 6 14t14 6q4 0 7.5-1.5t6.5-4.5l136-135 56 56-136 136q-3 3-4.5 6.5T454-180q0 8 6.5 14t14.5 6Zm-1 80q-37 0-65.5-24.5T375-166q-34-5-57-28t-28-57q-34-5-56.5-28.5T206-336q-38-5-62-33t-24-66q0-20 7.5-38.5T149-506l232-231 131 131q2 3 6 4.5t8 1.5q9 0 15-5.5t6-14.5q0-4-1.5-8t-4.5-6L398-777q-11-12-25.5-17.5T342-800q-15 0-30 5.5T285-777L144-635q-9 9-15 21t-8 24q-2 12 0 24.5t8 23.5l-58 58q-17-23-25-50.5T40-590q2-28 14-54.5T87-692l141-141q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l11 11 11-11q24-23 53.5-35t60.5-12q31 0 60.5 12t52.5 35l169 169q23 23 35 53t12 61q0 31-12 60.5T873-437L545-110q-14 14-32.5 22T474-80Zm-99-560Z"
+              />
+            </svg>
+            <h3 class="uppercase">Transparency</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="call-to-action page-center">
+      <div class="container flex flex-col gap-sm align-center align-vertically">
+        <h2 class="uppercase">Need help?</h2>
+        <a href="/contact" class="shadow-md">Get in contact</a>
+      </div>
+    </section>
+    <footer class="page-center bg-black">
+      <div class="container grid grid-col-6 gap-md footer-alignment">
+        <div class="grid-span-3 flex flex-col gap-md flex-equal">
+          <div class="flex flex-row gap-md footer-split">
+            <div>
+              <h2>Get in touch</h2>
+              <ul class="social-links">
+                <li>
+                  <a href="tel:+44083637371"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                      /></svg
+                    >+44 (0)836 38371</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:luke.cadby-gledhill@2plan.com"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                      /></svg
+                    >luke.cadby-gledhill@2plan.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29.5385 0H2.46154C1.10769 0 0 1.10769 0 2.46154V29.5385C0 30.8923 1.10769 32 2.46154 32H29.5385C30.8923 32 32 30.8923 32 29.5385V2.46154C32 1.10769 30.8923 0 29.5385 0ZM9.61969 27.0769H4.92308V11.9692H9.61969V27.0769ZM7.23446 10.1157C5.57415 10.1157 4.46523 8.93908 4.49969 7.48431C4.46523 5.96185 5.57415 4.81846 7.26892 4.81846C8.96615 4.81846 10.0394 5.96185 10.0738 7.48431C10.0751 8.93908 8.96738 10.1157 7.23446 10.1157ZM27.0769 27.0769H22.3815V18.7052C22.3815 16.7582 21.7009 15.4302 20.0012 15.4302C18.7052 15.4302 17.9323 16.3262 17.6234 17.1914C17.5003 17.4695 17.4388 17.9335 17.4388 18.3643V27.0769H12.7422V16.7902C12.7422 14.9046 12.6806 13.2985 12.6191 11.9705H16.6966L16.9132 14.0406H17.0068C17.6246 13.0818 19.1692 11.6308 21.6714 11.6308C24.7606 11.6308 27.0769 13.6689 27.0769 18.1182V27.0769Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Important information</h2>
+              <ul>
+                <li>
+                  <a href="#">Best Execution Policy</a>
+                </li>
+                <li>
+                  <a href="#">Client Classification</a>
+                </li>
+                <li>
+                  <a href="#">Conflicts of Interest Policy</a>
+                </li>
+                <li>
+                  <a href="#">Your Guide To Making A Complaint</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p>
+              LCG Wealth is a trading name of 2plan wealth management Ltd which
+              is authorised adn regulated by Finacial Conduct Activity. It is
+              entered on FCA register (www.fca.org.uk) under reference number
+              461598. Registered office: 2plan wealth management Ltd, 3rd Floor,
+              Bridgewater place, Water Lane, Leeds, LS11 5BZ. Registered ijn
+              England and Wales Number: 05998270
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <h2>Helpful links</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Our Services</a></li>
+            <li><a href="/how-we-work">How We Work</a></li>
+            <li><a href="/how-we-deliver">How We Deliver</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="#">Client Portal</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="grid-span-2 flex flex-row mw-100 footer-images">
+          <img
+            src="/assets/img/2plan.png"
+            alt="2plan logo"
+            class="flex-equal"
+          />
+          <img
+            src="/assets/img/logo.png"
+            alt="LGC Wealth logo"
+            class="flex-equal"
+          />
+          <img
+            src="/assets/img/charted-financial-planner.png"
+            alt="Financial Planner Charted logo"
+            class="flex-equal"
+          />
+        </div>
+      </div>
+    </footer>
+    <button
+      class="fixed scroll-to-top flex shadow-md"
+      aria-label="Scroll to the top of the page"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+      >
+        <path
+          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+        />
+      </svg>
+    </button>
   </body>
 </html>
