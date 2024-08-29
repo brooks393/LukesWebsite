@@ -33,6 +33,10 @@ ul {
   list-style-type: none;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* General utilities */
 
 .container {
@@ -398,10 +402,10 @@ nav.navigation-minimal .navigation-buttons {
 .landing-explore-cards a::before {
   content: "";
   position: absolute;
-  bottom: clamp(12%, 5vw, 8%);
+  bottom: max(-240px, -120%);
   left: -25%;
   width: 150%;
-  height: clamp(23%, 5vw, 21%);
+  height: 150%;
   background-color: var(--color-black);
   transform-origin: 100% 0;
   transform: rotate(-7deg);
@@ -432,6 +436,7 @@ nav.navigation-minimal .navigation-buttons {
 .call-to-action {
   background-image: url("/assets/img/dog.png");
   background-size: cover;
+  background-position: center center;
   padding-block: 2.5rem;
 }
 
@@ -516,6 +521,19 @@ footer img {
 /* Media Queries */
 
 @media (max-width: 640px) {
+  .landing-bullets-image {
+    display: none;
+  }
+
+  .landing-bullets-image-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .landing-bullets-image-container a {
+    justify-content: center;
+    align-items: center;
+  }
+
   div.footer-alignment {
     grid-template-columns: repeat(1, 1fr) !important;
   }
@@ -572,6 +590,14 @@ footer img {
 
   .navigation-buttons {
     display: none;
+  }
+
+  .landing-header-logo {
+    display: none;
+  }
+
+  .md-flex-column {
+    flex-direction: column;
   }
 
   .landing-explore-cards {
