@@ -61,18 +61,15 @@ servicesDropdownLink.forEach((link) =>
 
 // Minimal navbar on scroll
 const navbar = document.querySelector("nav");
+const navbarButtons = document.querySelector(".navigation-buttons");
 
 document.addEventListener("scroll", () => {
   var scrollHeight = document.documentElement.scrollTop;
   // Appear after scrolling 150 pixels. Hide after scrolling within 150 pixels
   if (scrollHeight >= 150) {
     navbar.classList.add("navigation-minimal");
-    navbar.style.top = "0";
   } else if (scrollHeight > 10 && scrollHeight < 150) {
-    navbar.style.top = "-100%";
-    setTimeout(() => {
-      navbar.classList.remove("navigation-minimal");
-    }, 25);
+    navbar.classList.remove("navigation-minimal");
   } else {
   }
 });
@@ -82,11 +79,25 @@ document.addEventListener("scroll", () => {
 const navigationMenu = document.querySelector(".navigation-menu");
 const navigationLinks = document.querySelectorAll(".navigation-links");
 
-console.log(navigationLinks);
-
 navigationMenu.addEventListener("click", () => {
   navigationMenu.classList.toggle("navigation-active");
   navigationLinks.forEach((link) => {
     link.classList.toggle("navigation-active");
   });
+});
+
+// Scroll to top button
+const scrollTopButton = document.querySelector(".scroll-to-top");
+
+document.addEventListener("scroll", () => {
+  var scrollHeight = document.documentElement.scrollTop;
+  if (scrollHeight >= 250) {
+    scrollTopButton.classList.add("scroll-active");
+  } else {
+    scrollTopButton.classList.remove("scroll-active");
+  }
+});
+
+scrollTopButton.addEventListener("click", () => {
+  window.scrollTo({ top: 0, behavior: "smooth" });
 });
