@@ -23,11 +23,13 @@
     <!-- Navigation bar -->
     <nav class="shadow-md page-center bg-green relative fixed">
       <div class="flex space-between container">
-        <img
-          src="./assets/img/logo.png"
-          alt="Luke Cadby-Gledhill Wealth logo"
-          class="navigation-logo"
-        />
+        <a href="/">
+          <img
+            src="./assets/img/logo.png"
+            alt="Luke Cadby-Gledhill Wealth logo"
+            class="navigation-logo"
+          />
+        </a>
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
             <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
@@ -54,9 +56,9 @@
                 <div
                   class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
                 >
-                  <a href="#" class="services-dropdown-link">Link 1</a>
-                  <a href="#" class="services-dropdown-link">Link 2</a>
-                  <a href="#" class="services-dropdown-link">Link 3</a>
+                  <a class="services-dropdown-link">Link 1</a>
+                  <a class="services-dropdown-link">Link 2</a>
+                  <a class="services-dropdown-link">Link 3</a>
                 </div>
               </li>
               <li class="navigation-link">
@@ -102,10 +104,12 @@
       class="landing-image-section"
     />
     <section class="container relative">
-      <div class="flex flex-row gap-md divider-block">
+      <div class="flex flex-row gap-md divider-block sm-flex-col-reverse">
         <div class="flex-equal flex flex-col gap-md">
           <h2 class="landing-bullets-title uppercase">LCG Wealth</h2>
-          <div class="grid grid-col-2 gap-sm align-center h-100">
+          <div
+            class="grid grid-col-2 gap-sm align-center h-100 landing-bullets-images"
+          >
             <img
               src="/assets/img/tree-plant.png"
               alt="Small tree in pot"
@@ -113,7 +117,7 @@
             />
             <a
               href="#"
-              class="bg-black w-100 flex-equal landing-bullets-button shadow-md flex align-center h-100"
+              class="bg-black w-100 flex-equal landing-bullets-button shadow-md flex align-center align-vertically h-100"
             >
               Book Your Free Initial Consultation
             </a>
@@ -153,7 +157,7 @@
           />
           <span>About us</span>
         </a>
-        <a href="/how-we-work" class="shadow-md">
+        <a href="/howwework" class="shadow-md">
           <img
             src="/assets/img/luke-and-scoobs.png"
             alt="Man and dog in the forest"
@@ -373,8 +377,7 @@
             <li><a href="/">Home</a></li>
             <li><a href="/about">About Us</a></li>
             <li><a href="/services">Our Services</a></li>
-            <li><a href="/how-we-work">How We Work</a></li>
-            <li><a href="/how-we-deliver">How We Deliver</a></li>
+            <li><a href="/howwework">How We Work</a></li>
             <li><a href="/contact">Contact Us</a></li>
             <li><a href="https://access.2plan.com">Client Portal</a></li>
             <li><a href="/privacy">Privacy Policy</a></li>
