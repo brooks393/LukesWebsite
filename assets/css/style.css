@@ -391,6 +391,11 @@ nav.navigation-minimal .navigation-buttons {
   margin-bottom: 1rem;
 }
 
+.landing-explore-cards img {
+  height: 87.5%;
+  object-fit: cover;
+}
+
 .landing-explore-cards a {
   position: relative;
   overflow: hidden;
