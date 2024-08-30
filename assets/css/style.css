@@ -699,7 +699,7 @@ footer img {
   font-weight: 400;
 }
 .about-words h3 {
-  font-size: clamp(20px, 3vw, 25px);
+  font-size: clamp(20px, 3vw, 30px);
   text-align: center;
   /* font-family:'Times New Roman', Times, serif; */
   font-weight: 450;
@@ -786,7 +786,7 @@ footer img {
 }
 
 .about-grid-item-img img{
-  width: 35%;
+  width: 45%;
   object-fit: fill;
   padding-bottom: 2%;
 }
@@ -799,9 +799,9 @@ footer img {
   padding-top: 20px;
   padding-bottom: 10px;
   text-align: center;
-  font-size: clamp(45px, 3vw, 25px);
+  font-family: (var(--font-abel));
+  font-size: clamp(40px, 3vw, 50px);
   color: white;
-  font-family: (var(--font-montserrat));
 }
 
 .value-grid {
@@ -842,7 +842,7 @@ footer img {
   text-align: center;
 }
 .support h2{
-  font-size: 36px;
+  font-size: clamp(30px, 3vw, 35px);
   padding: 10px;
  }
  .support img{
@@ -850,7 +850,7 @@ footer img {
   object-fit: cover;
  }
  .support p{
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
  }
 
@@ -866,7 +866,7 @@ footer img {
   text-align: center;
 }
 .transparancy h2{
-  font-size: 36px;
+  font-size: clamp(30px, 3vw, 35px);
   padding: 10px;
 }
 .transparancy img {
@@ -874,7 +874,7 @@ footer img {
  object-fit: cover;
 }
 .transparancy p{
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
 }
 
@@ -889,7 +889,7 @@ footer img {
   text-align: center;
 }
 .protection h2{
-  font-size: 36px;
+  font-size: clamp(30px, 3vw, 35px);
   padding: 10px;
  }
  .protection img{
@@ -897,7 +897,7 @@ footer img {
   object-fit: cover;
  }
  .protection p{
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
  }
 
@@ -911,7 +911,7 @@ footer img {
   text-align: center;
 }
 .expertise h2{
-  font-size: 36px;
+  font-size: clamp(30px, 3vw, 35px);
   padding: 10px;
  }
  .expertise img{
@@ -919,7 +919,7 @@ footer img {
   object-fit: cover;
  }
  .expertise p{
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
  }
 
@@ -934,7 +934,7 @@ footer img {
   text-align: center;
 }
 .independence h2{
-  font-size: 36px;
+  font-size: clamp(30px, 3vw, 35px);
   padding: 10px;
  }
  .independence img{
@@ -942,25 +942,10 @@ footer img {
  object-fit: cover;
  }
  .independence p{
-  font-size: 20px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
  }
 
-
-.contact-banner {
-  display: flex;
-  align-items: center;
-}
-
-.contact-banner h1 {
-  font-size: 30px;
-  text-align: center;
-}
-
-.contact-banner img{
-  height: 20%;
-  /* max-width: 100%; */
-}
 
 @media (max-width: 1280px) {           
   .about-title {
@@ -1109,7 +1094,7 @@ footer img {
 }
 .hww-grid-item-text h1{
   font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
+  font-size: clamp(40px, 3vw, 50px);
   padding: 5px 0;
 }
 .hww-grid-item-text p{
@@ -1132,7 +1117,7 @@ footer img {
 }
 .hww-grid-item-text-process-2 h1{
   font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
+  font-size: clamp(45px, 3vw, 80px);
   padding: 5px 0;
 }
 .hww-grid-item-text-process-2 p{
@@ -1153,18 +1138,73 @@ footer img {
   width: 100%;
   height: 100%;
   object-fit: cover;
-  /* height: 350px; */
 }
 
-@media (max-width: 1280px) {
-
-}
-@media (max-width: 768) {
-
-}
-@media (max-width: 640px) {
+@media (max-width: 1000px) {
+  .hww-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    width: 100%;
+  }
+  .hww-grid-item {
+    text-align: center;
+    height: 100%;
+  }
   
+  .hww-grid-item-text {
+    padding: 10px 10px ;
+    justify-content: center;
+  }
+  .hww-grid-item-text h1{
+    font-family: var(--font-abel);
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    padding: 5px 0;
+  }
+  .hww-grid-item-text p{
+    text-align: left;
+    font-size: clamp(16px, 3vw, 25px);
+    padding: px 0;
+  }
+  .hww-grid-item-text li{
+    text-align: left;
+    font-size: clamp(16px, 3vw, 25px);
+    list-style: circle;
+    padding: 3px;
+    margin-left: 10%;
+  }
+  
+  .hww-grid-item-text-process-2 {
+    padding: 10px 10px ;
+    justify-content: center;
+    /* align-items: center; */
+  }
+  .hww-grid-item-text-process-2 h1{
+    font-family: var(--font-abel);
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    padding: 5px 0;
+  }
+  .hww-grid-item-text-process-2 p{
+    text-align: left;
+    font-size: clamp(16px, 3vw, 25px);
+    padding: 6px 0;
+  }
+  
+  .hww-grid-item-text-process-2 li{
+    text-align: left;
+    font-size: clamp(16px, 3vw, 25px);
+    list-style: circle;
+    padding: 3px;
+    margin-left: 10%;
+  }
+  
+  .hww-grid-item img{
+    width: 100%;
+    max-height: 200px;
+    object-fit: cover;
+  }
 }
+
+
 
                                      /* Pensions and retirement */
 
@@ -1189,16 +1229,17 @@ footer img {
   text-align: left;
 }
 .pr-grid-item h1 {
-  font-size: 64px;
+  font-family: var(--font-abel);
+  font-size: clamp(3.5rem, 7vw, 5rem);
   padding: 2%;
 }
 .pr-grid-item h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 36px);
   padding: 2%;
 
 }
 .pr-grid-item p {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 2%;
 }
 .pr-grid-item img{
@@ -1211,62 +1252,47 @@ footer img {
 .warning-description{
   font-size: 22px;
   color: white;
-  padding: 0% 2%;
+  padding: 1% 2%;
   text-align: center;
 }
 
 
-
-                                     /* Pensions and retirement */
-
-.pr-second-section{
-  width: 100%;
-  /* max-width: min(
-    90%,
-    100rem
-  ); */
-  display: flex;
-  justify-content: center;
+@media (max-width: 900px) {
+  .pr-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    /* max-width: 90%; */
+  }
+  .pr-grid-item {
+    text-align: left;
+  }
+  .pr-grid-item h1 {
+    font-family: var(--font-abel);
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    padding: 2%;
+  }
+  .pr-grid-item h2 {
+    font-size: clamp(20px, 3vw, 36px);
+    padding: 2%;
+  
+  }
+  .pr-grid-item p {
+    font-size: clamp(16px, 3vw, 25px);
+    padding: 2%;
+    
+  }
+  .pr-grid-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 0;
+    max-height: 200px;
+  }
 }
-
-.pr-grid-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
-  /* width: 100%; */
-  color: white;
-}
-.pr-grid-item {
-  text-align: left;
-}
-.pr-grid-item h1 {
-  text-align: center;
-  font-size: 64px;
-  padding: 2%;
-}
-.pr-grid-item h2 {
-  font-size: 32px;
-  padding: 2%;
-
-}
-.pr-grid-item p {
-  font-size: 24px;
-  padding: 2%;
-}
-.pr-grid-item img{
-  padding: 20px;
-  max-width: 100%;
-  object-fit: cover;
-  height: 100%;
-}
-
-.warning-description{
-  font-size: 22px;
-  color: white;
-  padding: 0% 2%;
-  text-align: center;
-}
-
+  
                                      /* SAVINGS And INVESTMENTS  */
 
 .si-second-section{
@@ -1287,18 +1313,19 @@ text-align: left;
 }
 .si-grid-item h1 {
   text-align: center;
-font-size: 64px;
+  font-family: var(--font-abel);
+  font-size: clamp(3.5rem, 7vw, 5rem);
 text-transform: uppercase;
 padding: 2%;
 }
 .si-grid-item h2 {
-font-size: 32px;
+font-size: clamp(24px, 3vw, 36px);
 text-transform: uppercase;
 padding: 2%;
 
 }
 .si-grid-item p {
-font-size: 24px;
+font-size:  clamp(16px, 3vw, 25px);
 padding: 2%;
 }
 .si-grid-item img{
@@ -1309,10 +1336,46 @@ height: 100%;
 }
 
 .si-warning-description{
-font-size: 22px;
+  font-size: clamp(16px, 3vw, 25px);
 color: white;
-padding: 0% 2%;
+padding: 1% 2%;
 text-align: center;
+}
+
+@media (max-width: 900px) {
+  .si-grid-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+    /* max-width: 90%; */
+  }
+  .si-grid-item {
+    text-align: left;
+  }
+  .si-grid-item h1 {
+    font-family: var(--font-abel);
+    font-size: clamp(3.5rem, 7vw, 5rem);
+    padding: 2%;
+  }
+  .si-grid-item h2 {
+    font-size: clamp(20px, 3vw, 36px);
+    padding: 2%;
+  
+  }
+  .si-grid-item p {
+    font-size: clamp(16px, 3vw, 25px);
+    padding: 2%;
+    
+  }
+  .si-grid-item img{
+    width: 100%;
+    object-fit: cover;
+    height: 100%;
+    padding: 0;
+    max-height: 200px;
+  }
 }
 
                                     /* Protections  */
@@ -1335,26 +1398,28 @@ text-align: center;
   }
   .prot-grid-item h1 {
   text-align: center;
-  font-size: 64px;
+  font-family: var(--font-abel);
+  font-size: clamp(3.5rem, 7vw, 5rem);
   text-transform: uppercase;
   padding: 2%;
   }
 
   .prot-grid-item h2 {
-  font-size: 32px;
+    font-size: clamp(24px, 3vw, 36px);
   text-transform: uppercase;
   padding: 2%;
   
   }
   .prot-grid-item p {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 2%;
   }
 
   .prot-grid-item li {
     list-style-type: circle;
     margin-left: 8%;
-    font-size: 24px;
+    font-size: clamp(16px, 3vw, 25px);
+    padding-bottom: 1%;
   }
 
   .prot-grid-item img{
@@ -1364,6 +1429,41 @@ text-align: center;
   height: 100%;
   }
   
+  @media (max-width: 900px) {
+    .prot-grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      color: white;
+      justify-content: center;
+      /* max-width: 90%; */
+    }
+    .prot-grid-item {
+      text-align: left;
+    }
+    .prot-grid-item h1 {
+      font-family: var(--font-abel);
+      font-size: clamp(3.5rem, 7vw, 5rem);
+      padding: 2%;
+    }
+    .prot-grid-item h2 {
+      font-size: clamp(20px, 3vw, 36px);
+      padding: 2%;
+    
+    }
+    .prot-grid-item p {
+      font-size: clamp(16px, 3vw, 25px);
+      padding: 2%;
+      
+    }
+    .prot-grid-item img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      padding: 0;
+      max-height: 200px;
+    }
+  }
 
                                       /* Inhertitance tax and estate */
 
@@ -1385,26 +1485,27 @@ text-align: center;
   }
   .tax-grid-item h1 {
   text-align: center;
-  font-size: 64px;
+  font-family: var(--font-abel);
+  font-size: clamp(3.5rem, 7vw, 5rem);
   text-transform: uppercase;
   padding: 2%;
   }
 
   .tax-grid-item h2 {
-  font-size: 32px;
+   font-size:  clamp(24px, 3vw, 36px);
   text-transform: uppercase;
   padding: 2%;
   
   }
   .tax-grid-item p {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 2%;
   }
 
   .tax-grid-item li {
     list-style-type: circle;
     margin-left: 8%;
-    font-size: 24px;
+    font-size: clamp(16px, 3vw, 25px);
   }
 
   .tax-grid-item img{
@@ -1413,8 +1514,68 @@ text-align: center;
   object-fit: cover;
   height: 100%;
   }
-  
 
+  .tax-grid-item-process-3 {
+    grid-column: 1 / span 2;
+  }
+  .tax-grid-item-process-3 h2 {
+    font-size: clamp(24px, 3vw, 36px);
+    text-transform: uppercase;
+    padding: 1%;
+    
+    }
+    .tax-grid-item-process-3 p {
+      font-size: clamp(16px, 3vw, 25px);
+     padding: 1%;
+    }
+
+
+  @media (max-width: 900px) {
+    .tax-grid-container{
+      display: grid;
+      grid-template-columns: 1fr;
+      padding: 10px;
+      color: white;
+      justify-content: center;
+      /* max-width: 90%; */
+    }
+    .tax-grid-item {
+      text-align: left;
+    }
+    .tax-grid-item h1 {
+      font-family: var(--font-abel);
+      font-size: clamp(3.5rem, 7vw, 5rem);
+      padding: 2%;
+    }
+    .tax-grid-item h2 {
+      font-size: clamp(24px, 3vw, 36px);
+      padding: 2%;
+    
+    }
+    .tax-grid-item p {
+      font-size: clamp(16px, 3vw, 25px);
+      padding: 2%;
+      
+    }
+    .tax-grid-item img{
+      width: 100%;
+      object-fit: cover;
+      height: 100%;
+      padding: 0;
+      max-height: 200px;
+    }
+    .tax-grid-item-process-3 h2 {
+      font-size:clamp(24px, 3vw, 36px);
+      text-transform: uppercase;
+      padding: 2%;
+      
+      }
+      .tax-grid-item-process-3 p {
+        font-size: clamp(16px, 3vw, 25px);
+       padding: 2%;
+      }
+  }
+  
                                       /* Business  */
 
 .bus-second-section{
@@ -1435,26 +1596,27 @@ text-align: center;
   }
   .bus-grid-item h1 {
   text-align: center;
-  font-size: 64px;
+  font-family: var(--font-abel);
+  font-size: clamp(3.5rem, 7vw, 5rem);
   text-transform: uppercase;
   padding: 2%;
   }
 
   .bus-grid-item h2 {
-  font-size: 32px;
+  font-size: clamp(24px, 3vw, 36px);
   text-transform: uppercase;
   padding: 2%;
   
   }
   .bus-grid-item p {
-  font-size: 24px;
+  font-size: clamp(16px, 3vw, 25px);
   padding: 2%;
   }
 
   .bus-grid-item li {
     list-style-type: circle;
     margin-left: 8%;
-    font-size: 24px;
+    font-size: clamp(16px, 3vw, 25px);
   }
 
   .bus-grid-item img{
@@ -1468,12 +1630,12 @@ text-align: center;
     grid-column: 1 / span 2;
   }
   .bus-grid-item-process-3 h2 {
-    font-size: 32px;
+    font-size: clamp(24px, 3vw, 36px);
     text-transform: uppercase;
     padding: 1%;
     
     }
     .bus-grid-item-process-3 p {
-    font-size: 24px;
+    font-size:clamp(16px, 3vw, 25px);
     padding: 1%;
     }

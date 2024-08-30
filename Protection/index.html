@@ -17,49 +17,56 @@
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Baskervville+SC&display=swap" rel="stylesheet">
   </head>
   <body>
-    <!-- Navigation bar -->
-    <nav class="shadow-md page-center bg-green">
-      <div class="flex space-between container">
-        <img
-          src="/assets/img/logo.png"
-          alt="Luke Cadby-Gledhill Wealth logo"
-          class="navigation-logo"
-        />
-        <div class="flex flex-col align-vertically gap-md">
-          <div class="flex space-right gap-md">
-            <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
-              >Client Portal</a
-            >
-            <a href="/contact" class="btn btn-lg bg-black shadow-sm rounded-md"
-              >Free Quote</a
-            >
+   <!-- Navigation bar -->
+   <nav class="shadow-md page-center bg-green relative fixed">
+    <div class="flex space-between container">
+      <img
+        src="/assets/img/logo.png"
+        alt="Luke Cadby-Gledhill Wealth logo"
+        class="navigation-logo"
+      />
+      <div class="flex flex-col align-vertically gap-md">
+        <div class="flex space-right gap-md navigation-buttons">
+          <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
+            >Client Portal</a
+          >
+          <a href="/contact" class="btn btn-lg bg-black shadow-sm rounded-md"
+            >Free Quote</a
+          >
+        </div>
+        <div>
+          <div class="navigation-menu">
+            <button aria-label="Toggle menu">
+              <span class="navigation-bar"></span>
+              <span class="navigation-bar"></span>
+              <span class="navigation-bar"></span>
+            </button>
           </div>
-          <div>
-            <ul class="flex gap-md">
-              <li><a href="/about">About us</a></li>
-              <li class="relative">
-                <a href="/services" class="services-dropdown-link"
-                  >Our Services</a
-                >
-                <div
-                  class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
-                >
-                  <a href="#">Link 1</a>
-                  <a href="#">Link 2</a>
-                  <a href="#">Link 3</a>
-                </div>
-              </li>
-              <li>
-                <a href="/how-we-work">How We Work</a>
-              </li>
-              <li><a href="/news">News</a></li>
-              <li><a href="/contact">Contact us</a></li>
-            </ul>
-          </div>
+          <ul class="flex gap-md navigation-links">
+            <li class="navigation-link"><a href="/about">About us</a></li>
+            <li class="relative navigation-link">
+              <a href="/services" class="services-dropdown-link"
+                >Our Services</a
+              >
+              <div
+                class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
+              >
+                <a href="#" class="services-dropdown-link">Link 1</a>
+                <a href="#" class="services-dropdown-link">Link 2</a>
+                <a href="#" class="services-dropdown-link">Link 3</a>
+              </div>
+            </li>
+            <li class="navigation-link">
+              <a href="/how-we-work">How We Work</a>
+            </li>
+            <li class="navigation-link"><a href="/news">News</a></li>
+            <li class="navigation-link"><a href="/contact">Contact us</a></li>
+          </ul>
         </div>
       </div>
-    </nav>
-
+    </div>
+  </nav>
+  <!-- Image -->
      <div class="image-container">
         <img 
         src="img/81IuB6MdCrL-copy.jpg" 
@@ -150,5 +157,150 @@
         </div> 
       </div> 
     </section>
-
+    <section class="call-to-action page-center">
+      <div class="container flex flex-col gap-sm align-center align-vertically">
+        <h2 class="uppercase">Need help?</h2>
+        <a href="/contact" class="shadow-md">Get in contact</a>
+      </div>
+    </section>
+    <footer class="page-center bg-black">
+      <div class="container grid grid-col-6 gap-md footer-alignment">
+        <div class="grid-span-3 flex flex-col gap-md flex-equal">
+          <div class="flex flex-row gap-md footer-split">
+            <div>
+              <h2>Get in touch</h2>
+              <ul class="social-links">
+                <li>
+                  <a href="tel:+44083637371"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
+                      /></svg
+                    >+44 (0)836 38371</a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:luke.cadby-gledhill@2plan.com"
+                    ><svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      height="24px"
+                      viewBox="0 -960 960 960"
+                      width="24px"
+                      fill="#e8eaed"
+                    >
+                      <path
+                        d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
+                      /></svg
+                    >luke.cadby-gledhill@2plan.com</a
+                  >
+                </li>
+                <li>
+                  <a href="#"
+                    ><svg
+                      width="32"
+                      height="32"
+                      viewBox="0 0 32 32"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M29.5385 0H2.46154C1.10769 0 0 1.10769 0 2.46154V29.5385C0 30.8923 1.10769 32 2.46154 32H29.5385C30.8923 32 32 30.8923 32 29.5385V2.46154C32 1.10769 30.8923 0 29.5385 0ZM9.61969 27.0769H4.92308V11.9692H9.61969V27.0769ZM7.23446 10.1157C5.57415 10.1157 4.46523 8.93908 4.49969 7.48431C4.46523 5.96185 5.57415 4.81846 7.26892 4.81846C8.96615 4.81846 10.0394 5.96185 10.0738 7.48431C10.0751 8.93908 8.96738 10.1157 7.23446 10.1157ZM27.0769 27.0769H22.3815V18.7052C22.3815 16.7582 21.7009 15.4302 20.0012 15.4302C18.7052 15.4302 17.9323 16.3262 17.6234 17.1914C17.5003 17.4695 17.4388 17.9335 17.4388 18.3643V27.0769H12.7422V16.7902C12.7422 14.9046 12.6806 13.2985 12.6191 11.9705H16.6966L16.9132 14.0406H17.0068C17.6246 13.0818 19.1692 11.6308 21.6714 11.6308C24.7606 11.6308 27.0769 13.6689 27.0769 18.1182V27.0769Z"
+                        fill="white"
+                      />
+                    </svg>
+                    Linkedin</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div>
+              <h2>Important information</h2>
+              <ul>
+                <li>
+                  <a href="/docs/best-execution-policy.pdf"
+                    >Best Execution Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/docs//client-classification.pdf"
+                    >Client Classification</a
+                  >
+                </li>
+                <li>
+                  <a href="/docs/conflicts-of-interest-policy.pdf"
+                    >Conflicts of Interest Policy</a
+                  >
+                </li>
+                <li>
+                  <a href="/docs/your-guide-to-making-a-complaint.pdf"
+                    >Your Guide To Making A Complaint</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div>
+            <p>
+              LCG Wealth is a trading name of 2plan wealth management Ltd which
+              is authorised adn regulated by Finacial Conduct Activity. It is
+              entered on FCA register (www.fca.org.uk) under reference number
+              461598. Registered office: 2plan wealth management Ltd, 3rd Floor,
+              Bridgewater place, Water Lane, Leeds, LS11 5BZ. Registered ijn
+              England and Wales Number: 05998270
+            </p>
+          </div>
+        </div>
+        <div class="">
+          <h2>Helpful links</h2>
+          <ul>
+            <li><a href="/">Home</a></li>
+            <li><a href="/about">About Us</a></li>
+            <li><a href="/services">Our Services</a></li>
+            <li><a href="/how-we-work">How We Work</a></li>
+            <li><a href="/how-we-deliver">How We Deliver</a></li>
+            <li><a href="/contact">Contact Us</a></li>
+            <li><a href="https://access.2plan.com">Client Portal</a></li>
+            <li><a href="/privacy">Privacy Policy</a></li>
+          </ul>
+        </div>
+        <div class="grid-span-2 flex flex-row mw-100 footer-images">
+          <img
+            src="/assets/img/2plan.png"
+            alt="2plan logo"
+            class="flex-equal"
+          />
+          <img
+            src="/assets/img/logo.png"
+            alt="LGC Wealth logo"
+            class="flex-equal"
+          />
+          <img
+            src="/assets/img/charted-financial-planner.png"
+            alt="Financial Planner Charted logo"
+            class="flex-equal"
+          />
+        </div>
+      </div>
+    </footer>
+    <button
+      class="fixed scroll-to-top flex shadow-md"
+      aria-label="Scroll to the top of the page"
+    >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        height="24px"
+        viewBox="0 -960 960 960"
+        width="24px"
+      >
+        <path
+          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+        />
+      </svg>
+    </button>
 </html>
