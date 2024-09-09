@@ -407,24 +407,26 @@ nav.navigation-minimal .navigation-buttons {
 .landing-explore-cards span {
   z-index: 3;
   display: block;
-  position: relative;
+  position: absolute;
   text-align: center;
-  /* padding: 1rem; */
+  padding-bottom: 1rem;
   width: 100%;
   font-size: clamp(1rem, 4vw, 1.5rem);
+  bottom: 0;
+  background-color: var(--color-black);
 }
 
-.landing-explore-cards a::before {
+.landing-explore-cards span::before {
   content: "";
   position: absolute;
-  bottom: -116%;
+  bottom: 100%;
   left: -25%;
   width: 150%;
-  height: 150%;
+  height: 5vw;
   background-color: var(--color-black);
   transform-origin: 100% 0;
   transform: rotate(-7deg);
-  z-index: 2;
+  z-index: -1;
 }
 
 .landing-explore-cards.services img {
@@ -432,17 +434,17 @@ nav.navigation-minimal .navigation-buttons {
   object-fit: cover;
 }
 
-.landing-explore-cards.services a::before {
+.landing-explore-cards.services span::before {
   content: "";
   position: absolute;
-  bottom: -96%;
+  bottom: 100%;
   left: -25%;
   width: 150%;
-  height: 150%;
+  height: 6vw;
   background-color: var(--color-black);
   transform-origin: 100% 0;
   transform: rotate(-7deg);
-  z-index: 2;
+  z-index: -1;
 }
 
 /* Value section */
@@ -524,8 +526,15 @@ footer img {
   object-fit: contain;
 }
 
+.footer-images {
+  display: flex;
+  align-items: center;
+  max-width: 100%;
+}
+
 .footer-images img {
-  width: 33%;
+  max-width: 33%;
+  max-height: 125px;
 }
 
 /* Scroll to top */
@@ -610,6 +619,9 @@ footer img {
 }
 
 @media (max-width: 768px) {
+  .landing-explore-cards span::before {
+    height: 12vw !important;
+  }
   body {
     margin-top: 75px;
   }
@@ -686,6 +698,9 @@ footer img {
 }
 
 @media (max-width: 1280px) {
+  .landing-explore-cards.services span::before {
+    height: 8vw !important;
+  }
   .footer-alignment {
     grid-template-columns: repeat(3, 1fr);
   }
@@ -694,9 +709,6 @@ footer img {
     justify-content: flex-end;
   }
 
-  .footer-images img {
-    max-width: 150px !important;
-  }
   .landing-explore-cards a::before {
     bottom: -100%;
   }
@@ -1847,6 +1859,7 @@ footer img {
   background-color: var(--color-white);
   transform-origin: bottom right;
   transition: transform 0.3s ease;
+  z-index: 3;
 }
 
 .hover-underline:hover::before {
