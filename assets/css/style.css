@@ -646,8 +646,8 @@ footer img {
   max-width: 100%;
   position: absolute;
   width: 100rem;
-  top: 58%; 
-  left: 19%; 
+  /* top: 58%; 
+  left: 19%;  */
   transform: translate(-50%, -50%); 
   /* background-color: #000000;  */
   color: #ffffff; 
@@ -714,6 +714,10 @@ footer img {
   font-weight: 300;
 }
 
+.quotes-div{
+  display: grid;
+  grid-column: repeat (2, 1fr);
+}
 
 .about-free-contact {
   margin: 50px 0;
@@ -791,7 +795,7 @@ footer img {
   padding-bottom: 2%;
 }
 
-.our-values-section{
+/* .our-values-section{
   justify-content: center;
 }
 
@@ -815,7 +819,6 @@ footer img {
   position: relative;
   padding: 20px 70px;
   margin: 10px 10px ;
-  /* max-width: 100%; */
 }
 
 .box:before {
@@ -944,9 +947,22 @@ footer img {
  .independence p{
   font-size: clamp(16px, 3vw, 25px);
   padding: 10px;
- }
+ } */
 
-
+@media (max-width: 1350px){
+  .about-container .chartered-img {
+    object-fit: contain;
+    align-self: self-start;
+    width: 300px;
+  }
+  
+  .about-container .shadow-chartered-img {
+    object-fit: contain;
+    align-self: self-end;
+    filter: brightness(50%);
+    width: 300px;
+  }
+}
 @media (max-width: 1280px) {           
   .about-title {
     justify-content: center;
@@ -957,14 +973,14 @@ footer img {
   .about-container .chartered-img {
     object-fit: contain;
     align-self: self-start;
-    width: 350px;
+    width: 250px;
   }
   
   .about-container .shadow-chartered-img {
     object-fit: contain;
     align-self: self-end;
     filter: brightness(50%);
-    width: 350px;
+    width: 250px;
   }
  }
 
@@ -978,14 +994,14 @@ footer img {
   .about-container .chartered-img {
     object-fit: contain;
     align-self: self-start;
-    width: 280px;
+    width: 200px;
   }
   
   .about-container .shadow-chartered-img {
   object-fit: contain;
     align-self: self-end;
     filter: brightness(50%);
-    width: 280px;
+    width: 200px;
   }
  }
  @media (max-width: 1000px) {           
@@ -1065,7 +1081,6 @@ footer img {
 
 
 .hww-second-section{
-  /* display: flex; */
   color: white;
 }
 
@@ -1083,14 +1098,11 @@ footer img {
 }
 .hww-grid-item {
   text-align: center;
-  /* height: 500px; */
-  /* align-content: center; */
 }
 
 .hww-grid-item-text {
   padding: 10px 50px ;
   justify-content: center;
-  /* align-items: center; */
 }
 .hww-grid-item-text h1{
   font-family: var(--font-abel);
@@ -1113,7 +1125,6 @@ footer img {
 .hww-grid-item-text-process-2 {
   padding: 10px 20px ;
   justify-content: center;
-  /* align-items: center; */
 }
 .hww-grid-item-text-process-2 h1{
   font-family: var(--font-abel);
@@ -1204,438 +1215,122 @@ footer img {
   }
 }
 
+                                     /* Services Page */
 
-
-                                     /* Pensions and retirement */
-
-.pr-second-section{
+.services-second-section{
   width: 100%;
-  /* max-width: min(
-    90%,
-    100rem
-  ); */
   display: flex;
   justify-content: center;
 }
 
-.pr-grid-container{
+.services-grid-container{
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   padding: 10px;
-  /* width: 100%; */
   color: white;
 }
-.pr-grid-item {
+.services-grid-item {
   text-align: left;
 }
-.pr-grid-item h1 {
+.services-grid-item h1 {
   font-family: var(--font-abel);
   font-size: clamp(3.5rem, 7vw, 5rem);
   padding: 2%;
 }
-.pr-grid-item h2 {
+.services-grid-item h2 {
   font-size: clamp(24px, 3vw, 36px);
   padding: 2%;
 
 }
-.pr-grid-item p {
+.services-grid-item p {
   font-size: clamp(16px, 3vw, 25px);
   padding: 2%;
 }
-.pr-grid-item img{
+
+.services-grid-item li {
+  list-style-type: circle;
+  margin-left: 8%;
+  font-size: clamp(15px, 3vw, 24px);
+  padding-bottom: 1%;
+}
+
+.services-grid-item img{
   padding: 20px;
   max-width: 100%;
   object-fit: cover;
   height: 100%;
 }
 
+.services-grid-item-process-3 {
+  grid-column: 1 / span 2;
+}
+.services-grid-item-process-3 h2 {
+  font-size: clamp(24px, 3vw, 36px);
+  text-transform: uppercase;
+  padding: 1%;
+  
+  }
+  .services-grid-item-process-3 p {
+    font-size: clamp(16px, 3vw, 25px);
+   padding: 1%;
+  }
+
 .warning-description{
-  font-size: 22px;
+  font-size: clamp(16px, 3vw, 25px);
   color: white;
   padding: 1% 2%;
   text-align: center;
 }
 
 
+
 @media (max-width: 900px) {
-  .pr-grid-container{
+  .services-grid-container{
     display: grid;
     grid-template-columns: 1fr;
     padding: 10px;
     color: white;
     justify-content: center;
-    /* max-width: 90%; */
   }
-  .pr-grid-item {
+  .services-grid-item {
     text-align: left;
   }
-  .pr-grid-item h1 {
+  .services-grid-item h1 {
     font-family: var(--font-abel);
     font-size: clamp(3.5rem, 7vw, 5rem);
     padding: 2%;
   }
-  .pr-grid-item h2 {
+  .services-grid-item h2 {
     font-size: clamp(20px, 3vw, 36px);
     padding: 2%;
   
   }
-  .pr-grid-item p {
+  .services-grid-item p {
     font-size: clamp(16px, 3vw, 25px);
     padding: 2%;
     
   }
-  .pr-grid-item img{
+  .services-grid-item img{
     width: 100%;
     object-fit: cover;
     height: 100%;
     padding: 0;
     max-height: 200px;
   }
-}
-  
-                                     /* SAVINGS And INVESTMENTS  */
 
-.si-second-section{
-width: 100%;
-display: flex;
-justify-content: center;
-}
-
-.si-grid-container{
-display: grid;
-grid-template-columns: repeat(2, 1fr);
-padding: 10px;
-/* width: 100%; */
-color: white;
-}
-.si-grid-item {
-text-align: left;
-}
-.si-grid-item h1 {
-  text-align: center;
-  font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
-text-transform: uppercase;
-padding: 2%;
-}
-.si-grid-item h2 {
-font-size: clamp(24px, 3vw, 36px);
-text-transform: uppercase;
-padding: 2%;
-
-}
-.si-grid-item p {
-font-size:  clamp(16px, 3vw, 25px);
-padding: 2%;
-}
-.si-grid-item img{
-padding: 20px;
-width: 100%;
-object-fit: cover;
-height: 100%;
-}
-
-.si-warning-description{
-  font-size: clamp(16px, 3vw, 25px);
-color: white;
-padding: 1% 2%;
-text-align: center;
-}
-
-@media (max-width: 900px) {
-  .si-grid-container{
-    display: grid;
-    grid-template-columns: 1fr;
-    padding: 10px;
-    color: white;
-    justify-content: center;
-    /* max-width: 90%; */
+  .services-grid-item-process-3 {
+    grid-column: 1;
   }
-  .si-grid-item {
-    text-align: left;
-  }
-  .si-grid-item h1 {
-    font-family: var(--font-abel);
-    font-size: clamp(3.5rem, 7vw, 5rem);
-    padding: 2%;
-  }
-  .si-grid-item h2 {
+  .services-grid-item-process-3 h2 {
     font-size: clamp(20px, 3vw, 36px);
-    padding: 2%;
-  
-  }
-  .si-grid-item p {
-    font-size: clamp(16px, 3vw, 25px);
+    text-transform: uppercase;
     padding: 2%;
     
-  }
-  .si-grid-item img{
-    width: 100%;
-    object-fit: cover;
-    height: 100%;
-    padding: 0;
-    max-height: 200px;
-  }
+    }
+    .services-grid-item-process-3 p {
+      font-size: clamp(16px, 3vw, 25px);
+     padding: 2%;
+    }
+    
 }
-
-                                    /* Protections  */
-
-.prot-second-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  }
   
-  .prot-grid-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
-  /* width: 100%; */
-  color: white;
-  }
-  .prot-grid-item {
-  text-align: left;
-  }
-  .prot-grid-item h1 {
-  text-align: center;
-  font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
-  text-transform: uppercase;
-  padding: 2%;
-  }
-
-  .prot-grid-item h2 {
-    font-size: clamp(24px, 3vw, 36px);
-  text-transform: uppercase;
-  padding: 2%;
-  
-  }
-  .prot-grid-item p {
-  font-size: clamp(16px, 3vw, 25px);
-  padding: 2%;
-  }
-
-  .prot-grid-item li {
-    list-style-type: circle;
-    margin-left: 8%;
-    font-size: clamp(16px, 3vw, 25px);
-    padding-bottom: 1%;
-  }
-
-  .prot-grid-item img{
-  padding: 20px;
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  }
-  
-  @media (max-width: 900px) {
-    .prot-grid-container{
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 10px;
-      color: white;
-      justify-content: center;
-      /* max-width: 90%; */
-    }
-    .prot-grid-item {
-      text-align: left;
-    }
-    .prot-grid-item h1 {
-      font-family: var(--font-abel);
-      font-size: clamp(3.5rem, 7vw, 5rem);
-      padding: 2%;
-    }
-    .prot-grid-item h2 {
-      font-size: clamp(20px, 3vw, 36px);
-      padding: 2%;
-    
-    }
-    .prot-grid-item p {
-      font-size: clamp(16px, 3vw, 25px);
-      padding: 2%;
-      
-    }
-    .prot-grid-item img{
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-      padding: 0;
-      max-height: 200px;
-    }
-  }
-
-                                      /* Inhertitance tax and estate */
-
-.tax-second-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  }
-  
-  .tax-grid-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
-  /* width: 100%; */
-  color: white;
-  }
-  .tax-grid-item {
-  text-align: left;
-  }
-  .tax-grid-item h1 {
-  text-align: center;
-  font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
-  text-transform: uppercase;
-  padding: 2%;
-  }
-
-  .tax-grid-item h2 {
-   font-size:  clamp(24px, 3vw, 36px);
-  text-transform: uppercase;
-  padding: 2%;
-  
-  }
-  .tax-grid-item p {
-  font-size: clamp(16px, 3vw, 25px);
-  padding: 2%;
-  }
-
-  .tax-grid-item li {
-    list-style-type: circle;
-    margin-left: 8%;
-    font-size: clamp(16px, 3vw, 25px);
-  }
-
-  .tax-grid-item img{
-  padding: 20px;
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  }
-
-  .tax-grid-item-process-3 {
-    grid-column: 1 / span 2;
-  }
-  .tax-grid-item-process-3 h2 {
-    font-size: clamp(24px, 3vw, 36px);
-    text-transform: uppercase;
-    padding: 1%;
-    
-    }
-    .tax-grid-item-process-3 p {
-      font-size: clamp(16px, 3vw, 25px);
-     padding: 1%;
-    }
-
-
-  @media (max-width: 900px) {
-    .tax-grid-container{
-      display: grid;
-      grid-template-columns: 1fr;
-      padding: 10px;
-      color: white;
-      justify-content: center;
-      /* max-width: 90%; */
-    }
-    .tax-grid-item {
-      text-align: left;
-    }
-    .tax-grid-item h1 {
-      font-family: var(--font-abel);
-      font-size: clamp(3.5rem, 7vw, 5rem);
-      padding: 2%;
-    }
-    .tax-grid-item h2 {
-      font-size: clamp(24px, 3vw, 36px);
-      padding: 2%;
-    
-    }
-    .tax-grid-item p {
-      font-size: clamp(16px, 3vw, 25px);
-      padding: 2%;
-      
-    }
-    .tax-grid-item img{
-      width: 100%;
-      object-fit: cover;
-      height: 100%;
-      padding: 0;
-      max-height: 200px;
-    }
-    .tax-grid-item-process-3 h2 {
-      font-size:clamp(24px, 3vw, 36px);
-      text-transform: uppercase;
-      padding: 2%;
-      
-      }
-      .tax-grid-item-process-3 p {
-        font-size: clamp(16px, 3vw, 25px);
-       padding: 2%;
-      }
-  }
-  
-                                      /* Business  */
-
-.bus-second-section{
-  width: 100%;
-  display: flex;
-  justify-content: center;
-  }
-  
-  .bus-grid-container{
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  padding: 10px;
-  /* width: 100%; */
-  color: white;
-  }
-  .bus-grid-item {
-  text-align: left;
-  }
-  .bus-grid-item h1 {
-  text-align: center;
-  font-family: var(--font-abel);
-  font-size: clamp(3.5rem, 7vw, 5rem);
-  text-transform: uppercase;
-  padding: 2%;
-  }
-
-  .bus-grid-item h2 {
-  font-size: clamp(24px, 3vw, 36px);
-  text-transform: uppercase;
-  padding: 2%;
-  
-  }
-  .bus-grid-item p {
-  font-size: clamp(16px, 3vw, 25px);
-  padding: 2%;
-  }
-
-  .bus-grid-item li {
-    list-style-type: circle;
-    margin-left: 8%;
-    font-size: clamp(16px, 3vw, 25px);
-  }
-
-  .bus-grid-item img{
-  padding: 20px;
-  width: 100%;
-  object-fit: cover;
-  height: 100%;
-  }
-  
-  .bus-grid-item-process-3 {
-    grid-column: 1 / span 2;
-  }
-  .bus-grid-item-process-3 h2 {
-    font-size: clamp(24px, 3vw, 36px);
-    text-transform: uppercase;
-    padding: 1%;
-    
-    }
-    .bus-grid-item-process-3 p {
-    font-size:clamp(16px, 3vw, 25px);
-    padding: 1%;
-    }
