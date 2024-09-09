@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Home — Luke Cadby-Gledhill Wealth</title>
+    <title>Our Services | Business — Luke Cadby-Gledhill Wealth</title>
     <link rel="stylesheet" href="/assets/css/style.css" />
     <script src="/assets/js/script.js" defer></script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -15,22 +15,55 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Abel&family=Amatic+SC:wght@400;700&family=Baskervville+SC&display=swap" rel="stylesheet">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body>
     <!-- Navigation bar -->
     <nav class="shadow-md page-center bg-green relative fixed">
       <div class="flex space-between container">
-        <img
-          src="/assets/img/logo.png"
-          alt="Luke Cadby-Gledhill Wealth logo"
-          class="navigation-logo"
-        />
+        <a href="/" class="hover-button">
+          <img
+            src=".././assets/img/logo.png"
+            alt="Luke Cadby-Gledhill Wealth logo"
+            class="navigation-logo"
+          />
+        </a>
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
-            <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
+            <a
+              href="#"
+              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
-            <a href="/contact" class="btn btn-lg bg-black shadow-sm rounded-md"
+            <a
+              href="/contact"
+              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
               >Free Quote</a
             >
           </div>
@@ -43,24 +76,59 @@
               </button>
             </div>
             <ul class="flex gap-md navigation-links">
-              <li class="navigation-link"><a href="/about">About us</a></li>
+              <li class="navigation-link hover-underline">
+                <a href="/about">About us</a>
+              </li>
               <li class="relative navigation-link">
-                <a href="/services" class="services-dropdown-link"
+                <a
+                  href="/services"
+                  class="services-dropdown-link hover-underline"
                   >Our Services</a
                 >
                 <div
                   class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
                 >
-                  <a href="#" class="services-dropdown-link">Link 1</a>
-                  <a href="#" class="services-dropdown-link">Link 2</a>
-                  <a href="#" class="services-dropdown-link">Link 3</a>
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Pension&Retirement"
+                    >Pensions & Retirement Planning</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Savings&Investments"
+                    >Savings & Investments</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Protection"
+                    >Personal & Family Protection</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/InheritanceTax&Estate"
+                    >IHT & Estate Planning</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Business"
+                    >Business & Corporate Advice</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Mortgages"
+                    >Morgages</a
+                  >
                 </div>
               </li>
-              <li class="navigation-link">
-                <a href="/how-we-work">How We Work</a>
+              <li class="navigation-link hover-underline">
+                <a href="/howwework">How We Work</a>
               </li>
-              <li class="navigation-link"><a href="/news">News</a></li>
-              <li class="navigation-link"><a href="/contact">Contact us</a></li>
+              <li class="navigation-link hover-underline">
+                <a href="/news">News</a>
+              </li>
+              <li class="navigation-link hover-underline">
+                <a href="/contact">Contact us</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -68,7 +136,7 @@
     </nav>
      <div class="image-container">
         <img 
-        src="img/NaaS-Network-copy.jpg" 
+        src="./img/NaaS-Network-copy.jpg" 
         alt="city-networks" 
         class="city-networks"
         />
@@ -101,13 +169,13 @@
         </div> 
         <div class="services-grid-item"> <!-- First Image -->
             <img 
-            src="img/istockphoto-514736838-612x612.jpg" 
+            src="./img/istockphoto-514736838-612x612.jpg" 
             alt="man-at-laptop" 
             />
         </div>
         <div class="services-grid-item"> <!-- Second Image -->
           <img 
-          src="img/shutterstock_2394640901.webp" 
+          src="./img/shutterstock_2394640901.webp" 
           alt="man-at-laptop" 
           />
         </div>
@@ -150,7 +218,7 @@
     <section class="call-to-action page-center">
       <div class="container flex flex-col gap-sm align-center align-vertically">
         <h2 class="uppercase">Need help?</h2>
-        <a href="/contact" class="shadow-md">Get in contact</a>
+        <a href="/contact" class="shadow-md hover-button">Get in contact</a>
       </div>
     </section>
     <footer class="page-center bg-black">
@@ -161,7 +229,7 @@
               <h2>Get in touch</h2>
               <ul class="social-links">
                 <li>
-                  <a href="tel:+44083637371"
+                  <a href="tel:+44083637371" class="hover-underline"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -176,7 +244,9 @@
                   >
                 </li>
                 <li>
-                  <a href="mailto:luke.cadby-gledhill@2plan.com"
+                  <a
+                    href="mailto:luke.cadby-gledhill@2plan.com"
+                    class="hover-underline"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -191,7 +261,7 @@
                   >
                 </li>
                 <li>
-                  <a href="#"
+                  <a href="#" class="hover-underline"
                     ><svg
                       width="32"
                       height="32"
@@ -213,22 +283,30 @@
               <h2>Important information</h2>
               <ul>
                 <li>
-                  <a href="/docs/best-execution-policy.pdf"
+                  <a
+                    href="/docs/best-execution-policy.pdf"
+                    class="hover-underline"
                     >Best Execution Policy</a
                   >
                 </li>
                 <li>
-                  <a href="/docs//client-classification.pdf"
+                  <a
+                    href="/docs//client-classification.pdf"
+                    class="hover-underline"
                     >Client Classification</a
                   >
                 </li>
                 <li>
-                  <a href="/docs/conflicts-of-interest-policy.pdf"
+                  <a
+                    href="/docs/conflicts-of-interest-policy.pdf"
+                    class="hover-underline"
                     >Conflicts of Interest Policy</a
                   >
                 </li>
                 <li>
-                  <a href="/docs/your-guide-to-making-a-complaint.pdf"
+                  <a
+                    href="/docs/your-guide-to-making-a-complaint.pdf"
+                    class="hover-underline"
                     >Your Guide To Making A Complaint</a
                   >
                 </li>
@@ -249,14 +327,23 @@
         <div class="">
           <h2>Helpful links</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/how-we-work">How We Work</a></li>
-            <li><a href="/how-we-deliver">How We Deliver</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="https://access.2plan.com">Client Portal</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/" class="hover-underline">Home</a></li>
+            <li><a href="/about" class="hover-underline">About Us</a></li>
+            <li>
+              <a href="/services" class="hover-underline">Our Services</a>
+            </li>
+            <li>
+              <a href="/howwework" class="hover-underline">How We Work</a>
+            </li>
+            <li><a href="/contact" class="hover-underline">Contact Us</a></li>
+            <li>
+              <a href="https://access.2plan.com" class="hover-underline"
+                >Client Portal</a
+              >
+            </li>
+            <li>
+              <a href="/privacy" class="hover-underline">Privacy Policy</a>
+            </li>
           </ul>
         </div>
         <div class="grid-span-2 flex flex-row mw-100 footer-images">
@@ -279,7 +366,7 @@
       </div>
     </footer>
     <button
-      class="fixed scroll-to-top flex shadow-md"
+      class="fixed scroll-to-top flex shadow-md hover-button"
       aria-label="Scroll to the top of the page"
     >
       <svg

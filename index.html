@@ -18,22 +18,56 @@
       href="https://fonts.googleapis.com/css2?family=Abel&display=swap"
       rel="stylesheet"
     />
+
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="/assets/img/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="/assets/img/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="/assets/img/favicon-16x16.png"
+    />
+    <link rel="manifest" href="/assets/img/site.webmanifest" />
+    <link
+      rel="mask-icon"
+      href="/assets/img/safari-pinned-tab.svg"
+      color="#5bbad5"
+    />
+    <link rel="shortcut icon" href="/assets/img/favicon.ico" />
+    <meta name="msapplication-TileColor" content="#da532c" />
+    <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
+    <meta name="theme-color" content="#ffffff" />
   </head>
   <body class="flex flex-col page-center">
     <!-- Navigation bar -->
     <nav class="shadow-md page-center bg-green relative fixed">
       <div class="flex space-between container">
-        <img
-          src="./assets/img/logo.png"
-          alt="Luke Cadby-Gledhill Wealth logo"
-          class="navigation-logo"
-        />
+        <a href="/" class="hover-button">
+          <img
+            src="./assets/img/logo.png"
+            alt="Luke Cadby-Gledhill Wealth logo"
+            class="navigation-logo"
+          />
+        </a>
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
-            <a href="#" class="btn btn-lg bg-black shadow-sm rounded-md"
+            <a
+              href="https://access.2plan.com"
+              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
-            <a href="/contact" class="btn btn-lg bg-black shadow-sm rounded-md"
+            <a
+              href="/contact"
+              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
               >Free Quote</a
             >
           </div>
@@ -46,24 +80,59 @@
               </button>
             </div>
             <ul class="flex gap-md navigation-links">
-              <li class="navigation-link"><a href="/about">About us</a></li>
+              <li class="navigation-link hover-underline">
+                <a href="/about">About us</a>
+              </li>
               <li class="relative navigation-link">
-                <a href="/services" class="services-dropdown-link"
+                <a
+                  href="/services"
+                  class="services-dropdown-link hover-underline"
                   >Our Services</a
                 >
                 <div
                   class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
                 >
-                  <a href="#" class="services-dropdown-link">Link 1</a>
-                  <a href="#" class="services-dropdown-link">Link 2</a>
-                  <a href="#" class="services-dropdown-link">Link 3</a>
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Pension&Retirement"
+                    >Pensions & Retirement Planning</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Savings&Investments"
+                    >Savings & Investments</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Protection"
+                    >Personal & Family Protection</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/InheritanceTax&Estate"
+                    >IHT & Estate Planning</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Business"
+                    >Business & Corporate Advice</a
+                  >
+                  <a
+                    class="services-dropdown-link hover-underline"
+                    href="/Mortgages"
+                    >Morgages</a
+                  >
                 </div>
               </li>
-              <li class="navigation-link">
-                <a href="/how-we-work">How We Work</a>
+              <li class="navigation-link hover-underline">
+                <a href="/howwework">How We Work</a>
               </li>
-              <li class="navigation-link"><a href="/news">News</a></li>
-              <li class="navigation-link"><a href="/contact">Contact us</a></li>
+              <li class="navigation-link hover-underline">
+                <a href="/news">News</a>
+              </li>
+              <li class="navigation-link hover-underline">
+                <a href="/contact">Contact us</a>
+              </li>
             </ul>
           </div>
         </div>
@@ -89,9 +158,9 @@
         </div>
         <!-- Links at bottom of header -->
         <div class="flex space-around landing-header-bottom">
-          <p href="#" class="uppercase">Face-to-Face</p>
-          <p href="#" class="uppercase">Online</p>
-          <p href="#" class="uppercase">Telephone</p>
+          <p class="uppercase">Face-to-Face</p>
+          <p class="uppercase">Online</p>
+          <p class="uppercase">Telephone</p>
         </div>
       </div>
     </header>
@@ -102,18 +171,20 @@
       class="landing-image-section"
     />
     <section class="container relative">
-      <div class="flex flex-row gap-md divider-block">
+      <div class="flex flex-row gap-md divider-block sm-flex-col-reverse">
         <div class="flex-equal flex flex-col gap-md">
           <h2 class="landing-bullets-title uppercase">LCG Wealth</h2>
-          <div class="grid grid-col-2 gap-sm align-center h-100">
+          <div
+            class="grid grid-col-2 gap-sm align-center h-100 landing-bullets-images"
+          >
             <img
               src="/assets/img/tree-plant.png"
               alt="Small tree in pot"
-              class="flex-equal landing-bullets-image shadow-md"
+              class="flex-equal landing-bullets-image shadow-md hover-button"
             />
             <a
-              href="#"
-              class="bg-black w-100 flex-equal landing-bullets-button shadow-md flex align-center h-100"
+              href="/contact"
+              class="bg-black w-100 flex-equal landing-bullets-button shadow-md flex align-center align-vertically h-100 hover-button"
             >
               Book Your Free Initial Consultation
             </a>
@@ -132,12 +203,30 @@
             market advice to all our clients be it
           </p>
           <ul class="landing-bullets-list">
-            <li><a href="#">Pensions & Retirement Planning</a></li>
-            <li><a href="#">Savings & Investments</a></li>
-            <li><a href="#">Personal & Family Protection</a></li>
-            <li><a href="#">IHT & Estate Planning</a></li>
-            <li><a href="#">Business & Corporate Advice</a></li>
-            <li><a href="#">Morgages</a></li>
+            <li>
+              <a href="/Pension&Retirement">Pensions & Retirement Planning</a>
+            </li>
+            <li>
+              <a href="/Savings&Investments" class="hover-underline"
+                >Savings & Investments</a
+              >
+            </li>
+            <li>
+              <a href="/Protection" class="hover-underline"
+                >Personal & Family Protection</a
+              >
+            </li>
+            <li>
+              <a href="/InheritanceTax&Estate" class="hover-underline"
+                >IHT & Estate Planning</a
+              >
+            </li>
+            <li>
+              <a href="/Business" class="hover-underline"
+                >Business & Corporate Advice</a
+              >
+            </li>
+            <li><a href="/Morgages" class="hover-underline">Morgages</a></li>
           </ul>
         </div>
       </div>
@@ -145,7 +234,7 @@
     <section class="container">
       <h2 class="landing-explore-title uppercase">Explore Us Further</h2>
       <div class="grid grid-col-4 gap-md w-100 landing-explore-cards">
-        <a href="/about" class="shadow-md">
+        <a href="/about" class="shadow-md hover-button">
           <img
             src="/assets/img/luke-and-scoobs.png"
             alt="Man and dog in the forest"
@@ -153,25 +242,25 @@
           />
           <span>About us</span>
         </a>
-        <a href="/how-we-work" class="shadow-md">
+        <a href="/howwework" class="shadow-md hover-button">
           <img
-            src="/assets/img/luke-and-scoobs.png"
+            src="/assets/img/howwework.jpg"
             alt="Man and dog in the forest"
             class="w-100"
           />
           <span>How we work</span>
         </a>
-        <a href="/services" class="shadow-md">
+        <a href="/services" class="shadow-md hover-button">
           <img
-            src="/assets/img/luke-and-scoobs.png"
+            src="/assets/img/ourservices.jpg"
             alt="Man and dog in the forest"
             class="w-100"
           />
           <span>Services</span>
         </a>
-        <a href="/contact" class="shadow-md">
+        <a href="/contact" class="shadow-md hover-button">
           <img
-            src="/assets/img/luke-and-scoobs.png"
+            src="/assets/img/contact.jpg"
             alt="Man and dog in the forest"
             class="w-100"
           />
@@ -271,7 +360,7 @@
     <section class="call-to-action page-center">
       <div class="container flex flex-col gap-sm align-center align-vertically">
         <h2 class="uppercase">Need help?</h2>
-        <a href="/contact" class="shadow-md">Get in contact</a>
+        <a href="/contact" class="shadow-md hover-button">Get in contact</a>
       </div>
     </section>
     
@@ -294,7 +383,7 @@
                       <path
                         d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                       /></svg
-                    >+44 (0)836 38371</a
+                    ><span class="hover-underline">+44 0836 38371</span></a
                   >
                 </li>
                 <li>
@@ -309,7 +398,9 @@
                       <path
                         d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
                       /></svg
-                    >luke.cadby-gledhill@2plan.com</a
+                    ><span class="hover-underline"
+                      >luke.cadby-gledhill@2plan.com</span
+                    ></a
                   >
                 </li>
                 <li>
@@ -326,8 +417,8 @@
                         fill="white"
                       />
                     </svg>
-                    Linkedin</a
-                  >
+                    <span class="hover-underline">Linkedin</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -335,23 +426,43 @@
               <h2>Important information</h2>
               <ul>
                 <li>
-                  <a href="/docs/best-execution-policy.pdf"
+                  <a
+                    href="/docs/best-execution-policy.pdf"
+                    target="_blank"
+                    class="hover-underline"
                     >Best Execution Policy</a
                   >
                 </li>
                 <li>
-                  <a href="/docs//client-classification.pdf"
+                  <a
+                    href="/docs//client-classification.pdf"
+                    target="_blank"
+                    class="hover-underline"
                     >Client Classification</a
                   >
                 </li>
                 <li>
-                  <a href="/docs/conflicts-of-interest-policy.pdf"
+                  <a
+                    href="/docs/conflicts-of-interest-policy.pdf"
+                    target="_blank"
+                    class="hover-underline"
                     >Conflicts of Interest Policy</a
                   >
                 </li>
                 <li>
-                  <a href="/docs/your-guide-to-making-a-complaint.pdf"
+                  <a
+                    href="/docs/your-guide-to-making-a-complaint.pdf"
+                    target="_blank"
+                    class="hover-underline"
                     >Your Guide To Making A Complaint</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/docs/privacy"
+                    target="_blank"
+                    class="hover-underline"
+                    >Privacy Policy</a
                   >
                 </li>
               </ul>
@@ -359,26 +470,38 @@
           </div>
           <div>
             <p>
-              LCG Wealth is a trading name of 2plan wealth management Ltd which
-              is authorised adn regulated by Finacial Conduct Activity. It is
-              entered on FCA register (www.fca.org.uk) under reference number
-              461598. Registered office: 2plan wealth management Ltd, 3rd Floor,
-              Bridgewater place, Water Lane, Leeds, LS11 5BZ. Registered ijn
-              England and Wales Number: 05998270
+              LCG Wealth is a trading name of 2plan wealth management Ltd
+              <a href="https://www.2plan.com" class="hover-underline"
+                >(www.2plan.com)</a
+              >
+              which is authorised adn regulated by Finacial Conduct Activity. It
+              is entered on FCA register
+              <a href="https://www.fca.org.uk" class="hover-underline"
+                >(www.fca.org.uk)</a
+              >
+              under reference number 461598. Registered office: 2plan wealth
+              management Ltd, 3rd Floor, Bridgewater place, Water Lane, Leeds,
+              LS11 5BZ. Registered ijn England and Wales Number: 05998270
             </p>
           </div>
         </div>
         <div class="">
           <h2>Helpful links</h2>
           <ul>
-            <li><a href="/">Home</a></li>
-            <li><a href="/about">About Us</a></li>
-            <li><a href="/services">Our Services</a></li>
-            <li><a href="/how-we-work">How We Work</a></li>
-            <li><a href="/how-we-deliver">How We Deliver</a></li>
-            <li><a href="/contact">Contact Us</a></li>
-            <li><a href="https://access.2plan.com">Client Portal</a></li>
-            <li><a href="/privacy">Privacy Policy</a></li>
+            <li><a href="/" class="hover-underline">Home</a></li>
+            <li><a href="/about" class="hover-underline">About Us</a></li>
+            <li>
+              <a href="/services" class="hover-underline">Our Services</a>
+            </li>
+            <li>
+              <a href="/howwework" class="hover-underline">How We Work</a>
+            </li>
+            <li><a href="/contact" class="hover-underline">Contact Us</a></li>
+            <li>
+              <a href="https://access.2plan.com" class="hover-underline"
+                >Client Portal</a
+              >
+            </li>
           </ul>
         </div>
         <div class="grid-span-2 flex flex-row mw-100 footer-images">
@@ -401,7 +524,7 @@
       </div>
     </footer>
     <button
-      class="fixed scroll-to-top flex shadow-md"
+      class="fixed scroll-to-top flex shadow-md hover-button"
       aria-label="Scroll to the top of the page"
     >
       <svg
