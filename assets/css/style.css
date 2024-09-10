@@ -23,6 +23,7 @@ body {
   color: white;
   margin-top: 143px;
   background-color: var(--color-green);
+  overflow-x: hidden;
 }
 
 a {
@@ -196,6 +197,14 @@ a {
   gap: 0.5rem;
 }
 
+.py-4 {
+  padding-block: 1rem;
+}
+
+.px-8 {
+  padding-inline: 2rem;
+}
+
 /* Buttons */
 
 .btn.btn-lg {
@@ -366,6 +375,7 @@ nav.navigation-minimal .navigation-buttons {
   width: 100%;
   max-height: 250px;
   object-fit: cover;
+  z-index: 2;
 }
 
 /* Landing bullets */
@@ -494,6 +504,8 @@ nav.navigation-minimal .navigation-buttons {
   background-size: cover;
   background-position: center center;
   padding-block: 2.5rem;
+  z-index: 2;
+  position: relative;
 }
 
 .call-to-action h2 {
@@ -1425,4 +1437,13 @@ textarea {
 .contact-title svg {
   width: 2rem;
   height: 2rem;
+}
+
+.logo-background {
+  opacity: 0.15;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  transform: scale(125%);
+  overflow: hidden;
 }
