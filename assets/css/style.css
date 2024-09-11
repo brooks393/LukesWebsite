@@ -476,8 +476,8 @@ nav.navigation-minimal .navigation-buttons {
   bottom: 100%;
   left: -25%;
   width: 150%;
-  height: 6vw;
-  background-color: var(--color-black);
+  height: 5vw;
+  background-color: #C6B8B8 ;
   transform-origin: 100% 0;
   transform: rotate(-7deg);
   z-index: -1;
@@ -542,6 +542,8 @@ nav.navigation-minimal .navigation-buttons {
   background-color: #C6B8B8;
   padding: 1rem;
   border-radius: 3px;
+  color: black; 
+  font-weight: 550;
 }
 
 /* Footer */
@@ -1306,11 +1308,18 @@ footer img {
   text-align: center;
 }
 
+.warning-description h4{
+  padding-bottom: 0.1%;
+  
+}
 
 .Self-build-mortgages{
   opacity: 0.7;
 }
 
+.people-at-an-office-meeting{
+  opacity: 0.7;
+}
 
 @media (max-width: 900px) {
   .services-grid-container {

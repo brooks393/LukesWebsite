@@ -57,7 +57,7 @@
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
             <a
-              style="color: black; font-weight: 550;" href="#"
+              style="color: black; font-weight: 550;" href="https://access.2plan.com" target="_blank" 
               class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
@@ -137,9 +137,9 @@
     <!-- Image -->
      <div class="image-container">
         <img 
-        src="./img/SOBK0622029_1560x880_desktop.jpeg" 
-        alt="person-putting-money-into-piggy-bank" 
-        class="person-putting-money-into-piggy-bank"
+        src="./img/person-putting-money-into-piggy-bank.jpeg" 
+        alt="person putting money into piggy bank" 
+       
         />
         <div class="overlay-text">Savings and Investments</div>
      </div>
@@ -179,14 +179,14 @@
         </div> 
         <div class="services-grid-item"> <!-- First Image -->
             <img 
-            src="./img/wp9223482-finance-4k-wallpapers.jpg" 
-            alt="man-at-laptop" 
+            src="./img/finance-image.jpg" 
+            alt="finance breakdown image" 
             />
         </div>
         <div class="services-grid-item"> <!-- Second Image -->
           <img 
-          src="./img/6548de20416a63bb3909cbf4_Savings (10).jpg" 
-          alt="man-at-laptop" 
+          src="./img/savings-jar.jpg" 
+          alt="2 jars, savings + investments" 
           />
         </div>
         <div class="services-grid-item"><!-- Process 2 -->
@@ -223,13 +223,17 @@
     <div class="warning-description">   <!--Warning Description-->
       <p>Please remember that investments can fluctuate in value, and you may not receive back the amount you originally invested.</p>
   </div>
-<section class="call-to-action page-center">
-      <div class="container flex flex-col gap-sm align-center align-vertically">
+  <div class="footer-cta-wrapper">
+    <section class="call-to-action page-center">
+      <div
+        class="container flex flex-col gap-sm align-center align-vertically"
+      >
         <h2 class="uppercase">Need help?</h2>
-        <a style="color: black; font-weight: 550;" href="/contact" class="shadow-md hover-button">Get in contact</a>
+        <a href="/contact" class="shadow-md hover-button">Get in contact</a>
       </div>
     </section>
-    <footer class="page-center bg-black">
+
+    <footer class="page-center footer-background">
       <div class="container grid grid-col-6 gap-md footer-alignment">
         <div class="grid-span-3 flex flex-col gap-md flex-equal">
           <div class="flex flex-row gap-md footer-split">
@@ -237,7 +241,7 @@
               <h2>Get in touch</h2>
               <ul class="social-links">
                 <li>
-                  <a href="tel:+44083637371" class="hover-underline"
+                  <a href="tel:+447825000955"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -248,13 +252,14 @@
                       <path
                         d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"
                       /></svg
-                    >+44 (0)836 38371</a
+                    ><span class="hover-underline"
+                      >+44 (0)7825 000955</span
+                    ></a
+
                   >
                 </li>
                 <li>
-                  <a
-                    href="mailto:luke.cadby-gledhill@2plan.com"
-                    class="hover-underline"
+                  <a href="mailto:luke.cadby-gledhill@2plan.com"
                     ><svg
                       xmlns="http://www.w3.org/2000/svg"
                       height="24px"
@@ -265,11 +270,15 @@
                       <path
                         d="M160-160q-33 0-56.5-23.5T80-240v-480q0-33 23.5-56.5T160-800h640q33 0 56.5 23.5T880-720v480q0 33-23.5 56.5T800-160H160Zm320-280L160-640v400h640v-400L480-440Zm0-80 320-200H160l320 200ZM160-640v-80 480-400Z"
                       /></svg
-                    >luke.cadby-gledhill@2plan.com</a
+                    ><span class="hover-underline"
+                      >luke.cadby-gledhill@2plan.com</span
+                    ></a
                   >
                 </li>
                 <li>
-                  <a href="#" class="hover-underline"
+                  <a
+                    href="https://www.linkedin.com/in/luke-cadby-gledhill-fpfs/"
+                    target="_blank"
                     ><svg
                       width="32"
                       height="32"
@@ -282,8 +291,8 @@
                         fill="white"
                       />
                     </svg>
-                    Linkedin</a
-                  >
+                    <span class="hover-underline">Linkedin</span>
+                  </a>
                 </li>
               </ul>
             </div>
@@ -293,6 +302,7 @@
                 <li>
                   <a
                     href="/docs/best-execution-policy.pdf"
+                    target="_blank"
                     class="hover-underline"
                     >Best Execution Policy</a
                   >
@@ -300,6 +310,7 @@
                 <li>
                   <a
                     href="/docs//client-classification.pdf"
+                    target="_blank"
                     class="hover-underline"
                     >Client Classification</a
                   >
@@ -307,6 +318,7 @@
                 <li>
                   <a
                     href="/docs/conflicts-of-interest-policy.pdf"
+                    target="_blank"
                     class="hover-underline"
                     >Conflicts of Interest Policy</a
                   >
@@ -314,8 +326,17 @@
                 <li>
                   <a
                     href="/docs/your-guide-to-making-a-complaint.pdf"
+                    target="_blank"
                     class="hover-underline"
                     >Your Guide To Making A Complaint</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="/docs/privacy"
+                    target="_blank"
+                    class="hover-underline"
+                    >Privacy Policy</a
                   >
                 </li>
               </ul>
@@ -323,12 +344,18 @@
           </div>
           <div>
             <p>
-              LCG Wealth is a trading name of 2plan wealth management Ltd which
-              is authorised adn regulated by Finacial Conduct Activity. It is
-              entered on FCA register (www.fca.org.uk) under reference number
-              461598. Registered office: 2plan wealth management Ltd, 3rd Floor,
-              Bridgewater place, Water Lane, Leeds, LS11 5BZ. Registered ijn
-              England and Wales Number: 05998270
+              LCG Wealth is a trading name of 2plan Wealth Management Ltd
+              <a href="https://www.2plan.com" class="hover-underline"
+                >(www.2plan.com)</a
+              >
+              which is authorised and regulated by Finacial Conduct Activity.
+              It is entered on FCA register
+              <a href="https://www.fca.org.uk" class="hover-underline"
+                >(www.fca.org.uk)</a
+              >
+              under reference number 461598. Registered office: 2plan Wealth
+              Management Ltd, 3rd Floor, Bridgewater place, Water Lane, Leeds,
+              LS11 5BZ. Registered in England and Wales Number: 05998270
             </p>
           </div>
         </div>
@@ -345,12 +372,9 @@
             </li>
             <li><a href="/contact" class="hover-underline">Contact Us</a></li>
             <li>
-              <a href="https://access.2plan.com" class="hover-underline"
+              <a href="https://access.2plan.com" target="_blank"  class="hover-underline"
                 >Client Portal</a
               >
-            </li>
-            <li>
-              <a href="/privacy" class="hover-underline">Privacy Policy</a>
             </li>
           </ul>
         </div>
@@ -373,19 +397,21 @@
         </div>
       </div>
     </footer>
-    <button
-      class="fixed scroll-to-top flex shadow-md hover-button"
-      aria-label="Scroll to the top of the page"
+  </div>
+  <button
+    class="fixed scroll-to-top flex shadow-md hover-button"
+    aria-label="Scroll to the top of the page"
+  >
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      height="24px"
+      viewBox="0 -960 960 960"
+      width="24px"
     >
-      <svg
-        xmlns="http://www.w3.org/2000/svg"
-        height="24px"
-        viewBox="0 -960 960 960"
-        width="24px"
-      >
-        <path
-          d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
-        />
-      </svg>
-    </button>
+      <path
+        d="M440-160v-487L216-423l-56-57 320-320 320 320-56 57-224-224v487h-80Z"
+      />
+    </svg>
+  </button>
+  </body>
 </html>
