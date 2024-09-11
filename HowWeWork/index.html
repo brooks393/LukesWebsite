@@ -43,7 +43,7 @@
     <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
   </head>
-  <body>
+  <body class="flex flex-col page-center">
  <!-- Navigation bar -->
     <nav class="shadow-md page-center bg-green relative fixed">
       <div class="flex space-between container">
@@ -56,14 +56,14 @@
         </a>
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
-            <a
+            <a style="color: black; font-weight: 550;"
               href="#"
-              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
+              class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
-            <a
+            <a style="color: black; font-weight: 550;"
               href="/contact"
-              class="btn btn-lg bg-black shadow-sm rounded-md hover-button"
+              class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
               >Free Quote</a
             >
           </div>
@@ -143,11 +143,8 @@
         />
         <h1 class="overlay-text">HOW WE WORK</h1>
      </div>
-    <section class="container page-center">
-      <div></div>
-    </section>
-    <section class="hww-second-section">
-      <div class="hww-ss-title">Our Process</div>
+    <section class="hww-second-section container page-center">
+      <!-- <div class="hww-ss-title">Our Process</div> -->
       <div class="hww-grid-container">         <!-- Proceess 1 -->
         <div class="hww-grid-item">
           <div class="hww-grid-item-text">
@@ -322,7 +319,7 @@
 <section class="call-to-action page-center">
       <div class="container flex flex-col gap-sm align-center align-vertically">
         <h2 class="uppercase">Need help?</h2>
-        <a href="/contact" class="shadow-md hover-button">Get in contact</a>
+        <a style="color: black; font-weight: 550;" href="/contact" class="shadow-md hover-button">Get in contact</a>
       </div>
     </section>
     <footer class="page-center bg-black">
@@ -484,4 +481,5 @@
         />
       </svg>
     </button>
+  </body>
 </html>
