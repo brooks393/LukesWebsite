@@ -18,6 +18,10 @@
   --font-abel: "Abel", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-montserrat);
   color: white;
@@ -1423,6 +1427,7 @@ footer img {
 }
 
 .hover-button {
+  z-index: 10;
   transition: all 0.25s;
 }
 
