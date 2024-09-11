@@ -145,6 +145,10 @@ a {
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .relative {
   position: relative;
 }
@@ -207,6 +211,10 @@ a {
 
 .px-8 {
   padding-inline: 2rem;
+}
+
+.ms-6 {
+  margin-left: 1.25rem;
 }
 
 /* Buttons */
@@ -587,7 +595,7 @@ footer img {
 }
 
 .footer-images img {
-  max-width: 33%;
+  max-width: 100%;
   max-height: 125px;
 }
 
@@ -1468,4 +1476,5 @@ textarea {
   right: 0;
   transform: scale(125%);
   overflow: hidden;
+  max-width: min(400px, 50%);
 }
