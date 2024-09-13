@@ -1229,7 +1229,7 @@ footer img {
 
   .about-grid-item-img h1 {
     text-align: center;
-    font-size: clamp(30px, 3vw, 25px);
+    /* font-size: clamp(30px, 3vw, 25px); */
   }
 
   .about-grid-item-img p {
@@ -1239,7 +1239,7 @@ footer img {
 
   .about-grid-item-text p {
     text-align: left;
-    font-size: clamp(16px, 3vw, 25px);
+    /* font-size: clamp(16px, 3vw, 25px); */
   }
 
   .about-grid-item-img img {
