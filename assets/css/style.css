@@ -555,7 +555,7 @@ nav.navigation-minimal .navigation-buttons {
   background-size: cover;
   background-position: center center;
 
-  z-index: 2;
+  z-index: 4;
   position: relative;
 }
 
