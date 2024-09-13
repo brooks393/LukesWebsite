@@ -47,6 +47,7 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
+    <meta name="robots" content="noindex" />
   </head>
   <body class="flex flex-col page-center">
     <!-- Navigation bar -->
@@ -54,22 +55,24 @@
       <div class="flex space-between container">
         <a href="/" class="hover-button">
           <img
-            src=".././assets/img/logo.png"
+            src=".././assets/img/logo.webp"
             alt="Luke Cadby-Gledhill Wealth logo"
             class="navigation-logo"
           />
         </a>
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
-            <a style="color: black; font-weight: 550;"
+            <a
+              style="color: black; font-weight: 550"
               href="#"
               class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
-            <a style="color: black; font-weight: 550;"
+            <a
+              style="color: black; font-weight: 550"
               href="/contact"
               class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
-              >Free Quote</a
+              >Free Consultaion</a
             >
           </div>
           <div>
@@ -82,7 +85,10 @@
             </div>
             <ul class="flex gap-md navigation-links">
               <li class="navigation-link hover-underline">
-                <a href="/about">About us</a>
+                <a href="/about">Home</a>
+              </li>
+              <li class="navigation-link hover-underline">
+                <a href="/about">About Us</a>
               </li>
               <li class="relative navigation-link">
                 <a
@@ -91,7 +97,7 @@
                   >Our Services</a
                 >
                 <div
-                  class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
+                  class="services-dropdown-content flex flex-col gap-sm shadow-md hide"
                 >
                   <a
                     class="services-dropdown-link hover-underline"
@@ -106,7 +112,7 @@
                   <a
                     class="services-dropdown-link hover-underline"
                     href="/Protection"
-                    >Personal & Family Protection</a
+                    >Protection & Personal Insurance</a
                   >
                   <a
                     class="services-dropdown-link hover-underline"
@@ -121,7 +127,7 @@
                   <a
                     class="services-dropdown-link hover-underline"
                     href="/Mortgages"
-                    >Morgages</a
+                    >Mortgages</a
                   >
                 </div>
               </li>
@@ -129,10 +135,12 @@
                 <a href="/howwework">How We Work</a>
               </li>
               <li class="navigation-link hover-underline">
-                <a href="/news">News</a>
+                <a href="/contact">Contact</a>
               </li>
-              <li class="navigation-link hover-underline">
-                <a href="/contact">Contact us</a>
+              <li class="navigation-link hover-underline md-hide">
+                <a href="https://access.2plan.com" class="md-hide"
+                  >Client Portal</a
+                >
               </li>
             </ul>
           </div>
@@ -158,7 +166,8 @@
               soon!
             </h2>
             <a
-             style="color: black; font-weight: 550;" href="/"
+              style="color: black; font-weight: 550"
+              href="/"
               class="btn btn-lg bg-off-white shadow-md hover-button p-4 rounded-md"
               >Return home</a
             >
@@ -315,28 +324,43 @@
               </li>
               <li><a href="/contact" class="hover-underline">Contact Us</a></li>
               <li>
-                <a href="https://access.2plan.com" class="hover-underline"
+                <a
+                  href="https://access.2plan.com"
+                  class="hover-underline"
+                  target="_blank"
                   >Client Portal</a
                 >
               </li>
             </ul>
           </div>
-          <div class="grid-span-2 flex flex-row mw-100 footer-images">
-            <img
-              src="/assets/img/2plan.png"
-              alt="2plan logo"
-              class="flex-equal"
-            />
-            <img
-              src="/assets/img/logo.png"
-              alt="LGC Wealth logo"
-              class="flex-equal"
-            />
-            <img
-              src="/assets/img/charted-financial-planner.png"
-              alt="Financial Planner Charted logo"
-              class="flex-equal"
-            />
+          <div
+            class="grid-span-2 flex flex-row space-between align-end mw-100 footer-images gap-md"
+          >
+            <a href="https://2plan.com" target="_blank" class="hover-button">
+              <img
+                src="/assets/img/2plan.webp"
+                alt="2plan logo"
+                loading="lazy"
+              />
+            </a>
+            <a href="/" target="_blank" class="hover-button">
+              <img
+                src="/assets/img/logo.webp"
+                alt="LGC Wealth logo"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.fca.org.uk"
+              target="_blank"
+              class="hover-button"
+            >
+              <img
+                src="/assets/img/charted-financial-planner.webp"
+                alt="Financial Planner Charted logo"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
       </footer>
