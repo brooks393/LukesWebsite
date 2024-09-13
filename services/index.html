@@ -46,6 +46,27 @@
     <meta name="msapplication-TileColor" content="#da532c" />
     <meta name="msapplication-config" content="/assets/img/browserconfig.xml" />
     <meta name="theme-color" content="#ffffff" />
+    <meta
+      name="keywords"
+      content="LCGWealth, Luke Cadby-Gledhill, finance, 2plan, Pensions & Retirement Planning, Savings & Investments, Personal & Family Protection, IHT & Estate Planning, Business & Corporate Advice, Mortgages, Norfolk, Charted Fiancial Planner"
+    />
+    <meta
+      property="og:title"
+      content="Our Services — Luke Cadby-Gledhill Wealth"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://lcgwealth.co.uk" />
+    <meta property="og:image" content=".././assets/img/luke-and-scoobs.webp" />
+    <meta
+      property="og:description"
+      content="Bespoke Independent Financial Planning
+Tailored solutions to achieve your long-term financial goals together"
+    />
+    <meta
+      name="description"
+      content="Bespoke Independent Financial Planning
+Tailored solutions to achieve your long-term financial goals together"
+    />
   </head>
   <body class="flex flex-col page-center">
     <!-- Navigation bar -->
@@ -53,7 +74,7 @@
       <div class="flex space-between container">
         <a href="/" class="hover-button">
           <img
-            src=".././assets/img/logo.png"
+            src=".././assets/img/logo.webp"
             alt="Luke Cadby-Gledhill Wealth logo"
             class="navigation-logo"
           />
@@ -61,14 +82,16 @@
         <div class="flex flex-col align-vertically gap-md">
           <div class="flex space-right gap-md navigation-buttons">
             <a
-            style="color: black; font-weight: 550; "href="https://access.2plan.com" target="_blank" 
+              style="color: black; font-weight: 550"
+              href="#"
               class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
               >Client Portal</a
             >
             <a
-              style="color: black; font-weight: 550;" href="/contact"
+              style="color: black; font-weight: 550"
+              href="/contact"
               class="btn btn-lg bg-off-white shadow-sm rounded-md hover-button"
-              >Free Quote</a
+              >Free Consultaion</a
             >
           </div>
           <div>
@@ -81,7 +104,10 @@
             </div>
             <ul class="flex gap-md navigation-links">
               <li class="navigation-link hover-underline">
-                <a href="/about">About us</a>
+                <a href="/about">Home</a>
+              </li>
+              <li class="navigation-link hover-underline">
+                <a href="/about">About Us</a>
               </li>
               <li class="relative navigation-link">
                 <a
@@ -90,7 +116,7 @@
                   >Our Services</a
                 >
                 <div
-                  class="services-dropdown-content flex flex-col gap-sm shadow-sm hide"
+                  class="services-dropdown-content flex flex-col gap-sm shadow-md hide"
                 >
                   <a
                     class="services-dropdown-link hover-underline"
@@ -105,7 +131,7 @@
                   <a
                     class="services-dropdown-link hover-underline"
                     href="/Protection"
-                    >Personal & Family Protection</a
+                    >Protection & Personal Insurance</a
                   >
                   <a
                     class="services-dropdown-link hover-underline"
@@ -120,7 +146,7 @@
                   <a
                     class="services-dropdown-link hover-underline"
                     href="/Mortgages"
-                    >Morgages</a
+                    >Mortgages</a
                   >
                 </div>
               </li>
@@ -128,10 +154,12 @@
                 <a href="/howwework">How We Work</a>
               </li>
               <li class="navigation-link hover-underline">
-                <a href="/news">News</a>
+                <a href="/contact">Contact</a>
               </li>
-              <li class="navigation-link hover-underline">
-                <a href="/contact">Contact us</a>
+              <li class="navigation-link hover-underline md-hide">
+                <a href="https://access.2plan.com" class="md-hide"
+                  >Client Portal</a
+                >
               </li>
             </ul>
           </div>
@@ -152,27 +180,33 @@
         <div
           class="grid grid-col-3 gap-md w-100 landing-explore-cards services"
         >
-          <a  href="/Pension&Retirement" class="shadow-md hover-button bg-off-white">
+          <a
+            href="/Pension&Retirement"
+            class="shadow-md hover-button bg-off-white"
+          >
             <img
-              src=".././Pension&Retirement/img/office people-copy.jpg"
-              alt="people at an office meeting" 
+              src=".././Pension&Retirement/img/office people-copy.webp"
+              alt="people at an office meeting"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading">Pensions & Retirement</span>
           </a>
           <a href="/Savings&Investments" class="shadow-md hover-button">
             <img
-              src=".././Savings&Investments/img/person-putting-money-into-piggy-bank.jpeg" 
-              alt="person putting money into piggy bank" 
+              src=".././Savings&Investments/img/person-putting-money-into-piggy-bank.webp"
+              alt="person putting money into piggy bank"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading">Savings & Investments</span>
           </a>
           <a href="/Protection" class="shadow-md hover-button">
             <img
-              src=".././Protection/img/dog-on-couch.jpg" 
+              src=".././Protection/img/dog-on-couch.webp"
               alt="a dog on the sofa"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading"
               >Protection & Personal Insurance</span
@@ -180,31 +214,35 @@
           </a>
           <a href="/InheritanceTax&Estate" class="shadow-md hover-button">
             <img
-              src=".././InheritanceTax&Estate/img/couple-holding-hands.jpg"
-              alt="Elderly couple holding hands" 
+              src=".././InheritanceTax&Estate/img/couple-holding-hands.webp"
+              alt="Elderly couple holding hands"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading">IHT & Estate Planning</span>
           </a>
           <a href="/Business" class="shadow-md hover-button">
             <img
-              src=".././Business/img/network-lines.jpg" 
-              alt="city networks lines" 
+              src=".././Business/img/network-lines.webp"
+              alt="city networks lines"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading">Business & Corporate</span>
           </a>
           <a href="/Mortgages" class="shadow-md hover-button">
             <img
-              src=".././Mortgages/img/Self-build-mortgages.jpg"
-              alt="lasercut house keychain" 
+              src=".././Mortgages/img/Self-build-mortgages.webp"
+              alt="lasercut house keychain"
               class="w-100"
+              loading="lazy"
             />
             <span class="services-subheading">Mortgages</span>
           </a>
         </div>
       </div>
     </section>
+
    
     <section class="our-values-section mb-4 relative">
       <div class="page-center">
@@ -212,11 +250,14 @@
       <div class="our-value-title">
         <h2>OUR VALUES</h2>
       </div>
+
       <img
-        src=".././assets/img/logo-minimal.png"
+        src=".././assets/img/logo-minimal.webp"
         alt=""
         class="logo-background"
+        loading="lazy"
       />
+
       <div
         class="flex flex-row flex-wrap align-vertically flex-stretch w-100 gap-md"
       >
@@ -302,8 +343,9 @@
         </div>
         </div>
       </div>
+
       </div>
-    </section>
+    </div>
     <div class="footer-cta-wrapper">
       <section class="call-to-action page-center">
         <div
@@ -313,7 +355,7 @@
           <a href="/contact" class="shadow-md hover-button">Get in contact</a>
         </div>
       </section>
-  
+
       <footer class="page-center footer-background">
         <div class="container grid grid-col-6 gap-md footer-alignment">
           <div class="grid-span-3 flex flex-col gap-md flex-equal">
@@ -336,7 +378,6 @@
                       ><span class="hover-underline"
                         >+44 (0)7825 000955</span
                       ></a
-  
                     >
                   </li>
                   <li>
@@ -453,28 +494,43 @@
               </li>
               <li><a href="/contact" class="hover-underline">Contact Us</a></li>
               <li>
-                <a href="https://access.2plan.com" target="_blank"  class="hover-underline"
+                <a
+                  href="https://access.2plan.com"
+                  class="hover-underline"
+                  target="_blank"
                   >Client Portal</a
                 >
               </li>
             </ul>
           </div>
-          <div class="grid-span-2 flex flex-row mw-100 footer-images">
-            <img
-              src="/assets/img/2plan.png"
-              alt="2plan logo"
-              class="flex-equal"
-            />
-            <img
-              src="/assets/img/logo.png"
-              alt="LGC Wealth logo"
-              class="flex-equal"
-            />
-            <img
-              src="/assets/img/charted-financial-planner.png"
-              alt="Financial Planner Charted logo"
-              class="flex-equal"
-            />
+          <div
+            class="grid-span-2 flex flex-row space-between align-end mw-100 footer-images gap-md"
+          >
+            <a href="https://2plan.com" target="_blank" class="hover-button">
+              <img
+                src="/assets/img/2plan.webp"
+                alt="2plan logo"
+                loading="lazy"
+              />
+            </a>
+            <a href="/" target="_blank" class="hover-button">
+              <img
+                src="/assets/img/logo.webp"
+                alt="LGC Wealth logo"
+                loading="lazy"
+              />
+            </a>
+            <a
+              href="https://www.fca.org.uk"
+              target="_blank"
+              class="hover-button"
+            >
+              <img
+                src="/assets/img/charted-financial-planner.webp"
+                alt="Financial Planner Charted logo"
+                loading="lazy"
+              />
+            </a>
           </div>
         </div>
       </footer>

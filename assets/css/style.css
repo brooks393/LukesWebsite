@@ -18,6 +18,10 @@
   --font-abel: "Abel", sans-serif;
 }
 
+html {
+  overflow-x: hidden;
+}
+
 body {
   font-family: var(--font-montserrat);
   color: white;
@@ -40,28 +44,28 @@ img {
 
 /* General utilities */
 
-h1{
+h1 {
   font-family: var(--font-montserrat);
   font-size: 80px;
 }
 
-h2{
+h2 {
   font-family: var(--font-montserrat);
   font-size: 50px;
 }
-h3{
+h3 {
   font-family: var(--font-montserrat);
   font-size: 32px;
 }
-h4{
+h4 {
   font-family: var(--font-montserrat);
   font-size: 24px;
 }
-p{
+p {
   font-family: var(--font-montserrat);
   font-size: 16px;
 }
-li{
+li {
   font-family: var(--font-montserrat);
   font-size: 16px;
 }
@@ -167,12 +171,20 @@ a {
   align-items: center;
 }
 
+.align-end {
+  align-items: flex-end;
+}
+
 .relative {
   position: relative;
 }
 
 .fixed {
   position: fixed;
+}
+
+.md-hide {
+  display: none !important;
 }
 
 .flex-equal {
@@ -211,7 +223,7 @@ a {
 }
 
 .bg-off-white {
-  background-color: #C6B8B8;
+  background-color: #c6b8b8;
 }
 .rounded-md {
   border-radius: 4px;
@@ -232,6 +244,10 @@ a {
 
 .px-8 {
   padding-inline: 2rem;
+}
+
+.ms-6 {
+  margin-left: 1.25rem;
 }
 
 /* Buttons */
@@ -475,7 +491,7 @@ nav.navigation-minimal .navigation-buttons {
   width: 100%;
   font-size: clamp(1rem, 4vw, 1.5rem);
   bottom: 0;
-  background-color: #C6B8B8 ;
+  background-color: #c6b8b8;
   color: #000000;
   font-weight: 550;
 }
@@ -487,7 +503,7 @@ nav.navigation-minimal .navigation-buttons {
   left: -25%;
   width: 150%;
   height: 5vw;
-  background-color: #C6B8B8 ;
+  background-color: #c6b8b8;
   transform-origin: 100% 0;
   transform: rotate(-7deg);
   z-index: -1;
@@ -505,7 +521,7 @@ nav.navigation-minimal .navigation-buttons {
   left: -25%;
   width: 150%;
   height: 5vw;
-  background-color: #C6B8B8 ;
+  background-color: #c6b8b8;
   transform-origin: 100% 0;
   transform: rotate(-7deg);
   z-index: -1;
@@ -517,7 +533,7 @@ nav.navigation-minimal .navigation-buttons {
   flex-basis: calc(33% - 1.5rem);
   color: #000000;
   font-weight: 550;
-  background-color: #C6B8B8 ;
+  background-color: #c6b8b8;
   padding-block: 1.5rem;
   border-radius: 3px;
   width: 100%;
@@ -530,18 +546,18 @@ nav.navigation-minimal .navigation-buttons {
 .landing-value-cards svg {
   width: 2.5rem;
   height: 2.5rem;
-  -webkit-filter:invert(100%);
+  -webkit-filter: invert(100%);
   filter: invert(100%);
 }
 
 /* Call to action + Footer */
 
 .footer-cta-wrapper {
-  background-image: url("/assets/img/dog.png");
+  background-image: url("/assets/img/dog.webp");
   background-size: cover;
   background-position: center center;
 
-  z-index: 2;
+  z-index: 4;
   position: relative;
 }
 
@@ -567,10 +583,10 @@ nav.navigation-minimal .navigation-buttons {
 }
 
 .call-to-action a {
-  background-color: #C6B8B8;
+  background-color: #c6b8b8;
   padding: 1rem;
   border-radius: 3px;
-  color: black; 
+  color: black;
   font-weight: 550;
 }
 
@@ -622,7 +638,7 @@ footer img {
 }
 
 .footer-images img {
-  max-width: 33%;
+  max-width: 100%;
   max-height: 125px;
 }
 
@@ -630,7 +646,7 @@ footer img {
 .scroll-to-top {
   bottom: 1.5rem;
   right: 1.5rem;
-  background-color: #C6B8B8;
+  background-color: #c6b8b8;
   border-radius: 50%;
   border: none;
   padding: 0.5rem;
@@ -805,6 +821,10 @@ footer img {
   .footer-alignment {
     grid-template-columns: repeat(2, 1fr) !important;
   }
+
+  .md-hide {
+    display: inherit !important;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -829,7 +849,6 @@ footer img {
 .image-container {
   position: relative;
   text-align: center;
-
 }
 .image-container img {
   width: 100vw;
@@ -837,15 +856,14 @@ footer img {
   max-height: 600px;
   object-fit: cover;
   filter: brightness(95%);
-  
 }
 
 .overlay-text {
   max-width: 100%;
   position: absolute;
-  bottom: 40%; 
+  bottom: 40%;
   left: 15%;
-  color: #ffffff; 
+  color: #ffffff;
   font-family: var(--font-abel);
   /* font-size: clamp(3.5rem, 7vw, 5rem); */
   text-align: center;
@@ -853,27 +871,26 @@ footer img {
   text-transform: uppercase;
 }
 
-@media(min-width:1950px){
+@media (min-width: 1950px) {
   .overlay-text {
-     left: 25%;
+    left: 25%;
   }
 }
-@media(max-width:1600px){
+@media (max-width: 1600px) {
   .overlay-text {
-     left: 10%;
+    left: 10%;
   }
 }
-@media(max-width:1400px){
+@media (max-width: 1400px) {
   .overlay-text {
-     left: 5%;
+    left: 5%;
   }
 }
 @media (max-width: 500px) {
   .overlay-text {
     font-size: 60px;
- }
+  }
 }
-
 
 .second-section {
   display: flex;
@@ -936,7 +953,7 @@ footer img {
   grid-column: repeat (2, 1fr);
   gap: 1.5rem;
 }
-.quotes-div p{
+.quotes-div p {
   padding: 0px;
 }
 .about-free-contact {
@@ -954,7 +971,7 @@ footer img {
   border-radius: 4px;
 }
 
-@media(max-width:460px){
+@media (max-width: 460px) {
   .about-words h1 {
     font-size: 32px;
   }
@@ -976,7 +993,7 @@ footer img {
   flex-direction: row;
   justify-content: center;
   color: #ffffff;
-  gap: 1.5rem
+  gap: 1.5rem;
   /* padding: 2% 0%; */
 }
 
@@ -1053,7 +1070,6 @@ footer img {
   justify-content: center;
   text-align: center;
   padding: 1rem;
-  
 }
 
 .about-value-grid h2 {
@@ -1069,8 +1085,7 @@ footer img {
   padding: 10px;
 }
 
-@media (max-width: 1350px){
-
+@media (max-width: 1350px) {
   .about-container .chartered-img {
     object-fit: contain;
     align-self: self-start;
@@ -1136,15 +1151,14 @@ footer img {
   }
 }
 
-
- @media (max-width: 768px) {              /*>768*/
-  .overlay-text{
+@media (max-width: 768px) {
+  /*>768*/
+  .overlay-text {
     left: 0%;
     padding: 0% 5%;
   }
 
-  .third-section{
-
+  .third-section {
     max-width: 100%;
     display: flex;
     justify-content: center;
@@ -1202,17 +1216,14 @@ footer img {
 
 /* How We Work Page */
 
-
 .hww-second-section {
   color: white;
 }
-
 
 .hww-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  
 }
 .hww-grid-item {
   text-align: center;
@@ -1458,18 +1469,18 @@ footer img {
   text-align: center;
 }
 
-.warning-description h4{
+.warning-description h4 {
   padding-bottom: 0.1%;
-  
 }
 
-.Self-build-mortgages{
+.Self-build-mortgages {
   opacity: 0.7;
 }
 
-.people-at-an-office-meeting{
+.people-at-an-office-meeting {
   opacity: 0.7;
 }
+
 .dog-on-sofa{
   opacity: 0.7;
 }
@@ -1486,7 +1497,7 @@ footer img {
   opacity: 0.7;
 }
 
-.please-note-text{
+.please-note-text {
   font-weight: 500;
 }
 
@@ -1613,6 +1624,7 @@ footer img {
 }
 
 .hover-button {
+  z-index: 10;
   transition: all 0.25s;
 }
 
@@ -1653,5 +1665,6 @@ textarea {
   right: 0;
   transform: scale(125%);
   overflow: hidden;
+  max-width: min(400px, 50%);
 }
 
