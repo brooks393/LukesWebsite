@@ -1216,14 +1216,17 @@ footer img {
 
 /* How We Work Page */
 
+
 .hww-second-section {
   color: white;
 }
+
 
 .hww-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
+  
 }
 .hww-grid-item {
   text-align: center;
@@ -1231,7 +1234,7 @@ footer img {
 }
 
 .hww-grid-item-text {
-  /* padding: 10% 5%; */
+  padding: 10% 5%;
   justify-content: center;
   align-items: baseline;
 }
@@ -1301,7 +1304,7 @@ footer img {
     padding: 10px 10px;
     justify-content: center;
   }
-  .hww-grid-item-text h2 {
+  .hww-grid-item-text h1 {
     /* font-family: var(--font-abel); */
     /* font-size: clamp(3.5rem, 7vw, 5rem); */
     padding: 5px 0;
@@ -1309,7 +1312,7 @@ footer img {
   .hww-grid-item-text p {
     text-align: left;
     /* font-size: clamp(16px, 3vw, 25px); */
-    /* padding: px 0; */
+    padding: px 0;
   }
   .hww-grid-item-text li {
     text-align: left;
@@ -1324,7 +1327,7 @@ footer img {
     justify-content: center;
     /* align-items: center; */
   }
-  .hww-grid-item-text-process-2 h2 {
+  .hww-grid-item-text-process-2 h1 {
     /* font-family: var(--font-abel); */
     /* font-size: clamp(3.5rem, 7vw, 5rem); */
     padding: 5px 0;
