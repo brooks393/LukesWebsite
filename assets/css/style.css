@@ -1247,6 +1247,10 @@ footer img {
     object-fit: fill;
     padding-bottom: 2%;
   }
+
+  .our-value-title h2{
+    font-size: 40px;
+  }
 }
 
 /* How We Work Page */
@@ -1630,6 +1634,23 @@ footer img {
   /* font-size: clamp(1.25rem, 3vw, 1.75rem); */
   font-weight: 500;
   /* text-transform: lo; */
+}
+
+@media (max-width:800px){
+  .value-grid-card h3{
+    font-size: 25px;
+    /* font-size: clamp(1.25rem, 3vw, 1.75rem); */
+    font-weight: 500;
+    /* text-transform: lo; */
+  }
+}
+@media (max-width:500px){
+  .value-grid-card h3{
+    font-size: 16px;
+    /* font-size: clamp(1.25rem, 3vw, 1.75rem); */
+    font-weight: 500;
+    /* text-transform: lo; */
+  }
 }
 
 .hover-underline {
