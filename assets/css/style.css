@@ -865,7 +865,18 @@ footer img {
   left: 15%;
   color: #ffffff;
   font-family: var(--font-abel);
-  /* font-size: clamp(3.5rem, 7vw, 5rem); */
+  text-align: center;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.overlay-text-mortgages{ 
+  max-width: 100%;
+  position: absolute;
+  bottom: 40%;
+  left: 15%;
+  color: #ffffff;
+  font-family: var(--font-abel);
   text-align: center;
   font-weight: bold;
   text-transform: uppercase;
@@ -875,9 +886,15 @@ footer img {
   .overlay-text {
     left: 25%;
   }
+  .overlay-text-mortgages {
+    left: 25%;
+  }
 }
 @media (max-width: 1600px) {
   .overlay-text {
+    left: 10%;
+  }
+  .overlay-text-mortgages {
     left: 10%;
   }
 }
@@ -885,10 +902,28 @@ footer img {
   .overlay-text {
     left: 5%;
   }
+  /* .overlay-text-mortgages {
+    left: 5%;
+  } */
 }
-@media (max-width: 500px) {
+@media (max-width: 800px) {
   .overlay-text {
     font-size: 60px;
+    bottom: 30%;
+  }
+  .overlay-text-mortgages {
+    font-size: 60px;
+    /* bottom: 30%; */
+  }
+}
+@media (max-width: 550px) {
+  .overlay-text {
+    font-size: 50px;
+    bottom: 10%;
+  }
+  .overlay-text-mortgages {
+    font-size: 50px;
+    /* left: 25%; */
   }
 }
 
