@@ -1013,23 +1013,64 @@ footer img {
   border-radius: 4px;
 }
 
-.quotes {
-  background-color: rgb(95, 87, 71);
-  /* height: 100px; */
+.quotes-1{
+  position: absolute;
+  left: 10px;
+  top: -40px;
+  width: 70px;
+}
+
+.quotes-2{
+  position: absolute;
+  right: 10px;
+  bottom: -40px;
+  width: 70px;
+  rotate: 180deg;
+  z-index: 5;
+}
+
+.quotes-box{
+  background-color: rgba(95, 87, 71, .5);
+
   margin: 2px;
-  padding: 5px;
+  padding: 5px 40px;
   border: white;
   border-style: solid;
-  /* justify-content: center; */
 }
 .about-us-quote p {
   padding: 10px;
   font-size: 16px;
+  
 }
 .names-of-quote p {
   padding: 10px;
   text-align: center;
   font-size: 16px;
+}
+
+@media (max-width: 600px) {
+  .quotes-box{
+    background-color: rgb(95, 87, 71);;
+    margin: 2px;
+    padding: 5px 20px;
+    border: white;
+    border-style: solid;
+  }
+  .quotes-1{
+    position: absolute;
+    left: 10px;
+    top: -25px;
+    width: 50px;
+  }
+  
+  .quotes-2{
+    position: absolute;
+    right: 10px;
+    bottom: -25px;
+    width: 50px;
+    rotate: 180deg;
+    z-index: 5;
+  }
 }
 
 @media (max-width: 460px) {
