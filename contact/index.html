@@ -176,7 +176,7 @@ Tailored solutions to achieve your long-term financial goals together"
       <h1 class="overlay-text">Contact Us</h1>
     </div>
     <section class="page-center relative">
-      <div class="container">
+      <div class="container z-index-5">
         <div class="grid grid-col-3 md-grid-col-1 my-4 gap-md">
           <div
             class="flex flex-col md-text-center md-flex-row md-flex-wrap align-vertically align-vertically gap-sm"
@@ -239,13 +239,10 @@ Tailored solutions to achieve your long-term financial goals together"
                   /></svg
                 >Address
               </h2>
-              <a
-                href="https://www.google.com/maps/search/28%20Carpenter%20Close,%20Wymondham,%20Norfolk,%20NR18%200WG"
-                target="_blank"
-              >
+              <div>
                 <p>Wymondham</p>
                 <p>NR18 0WG</p>
-              </a>
+              </div>
             </div>
             <div class="md-flex-span-2">
               <h2
@@ -396,6 +393,23 @@ Tailored solutions to achieve your long-term financial goals together"
                 </div>
               </div>
               <div class="flex flex-col gap-sm w-100">
+                <label for="best-time-to-call" class="required"
+                  >Best time to call?</label
+                >
+                <select
+                  name="Best time to call"
+                  id="best-time-to-call"
+                  required
+                >
+                  <option value="Please select" selected disabled>
+                    Please select
+                  </option>
+                  <option value="9am-12pm">9am-12pm</option>
+                  <option value="12pm-4pm">12pm-4pm</option>
+                  <option value="4pm-6pm">4pm-6pm</option>
+                </select>
+              </div>
+              <div class="flex flex-col gap-sm w-100">
                 <label for="how-can-we-help" class="required"
                   >How can we help?</label
                 >
@@ -501,7 +515,7 @@ Tailored solutions to achieve your long-term financial goals together"
                 <ul>
                   <li>
                     <a
-                      href="/docs/PCA_Client_Agreement_1023.pdf"
+                      href="/docs/client-agreement.pdf"
                       target="_blank"
                       class="hover-underline"
                       >Client Agreement</a
@@ -541,13 +555,12 @@ Tailored solutions to achieve your long-term financial goals together"
                   </li>
                   <li>
                     <a
-                      href="/docs/LCG-Wealth-Privacy-Policy-v13.09.2024.pdf"
+                      href="/docs/privacy.pdf"
                       target="_blank"
                       class="hover-underline"
                       >Privacy Policy</a
                     >
                   </li>
-                 
                 </ul>
               </div>
             </div>
@@ -562,9 +575,12 @@ Tailored solutions to achieve your long-term financial goals together"
                 <a href="https://www.fca.org.uk" class="hover-underline"
                   >(www.fca.org.uk)</a
                 >
-                under reference number 461598. Registered office: 2plan Wealth
-                Management Ltd, 3rd Floor, Bridgewater place, Water Lane, Leeds,
-                LS11 5BZ. Registered in England and Wales Number: 05998270
+                under reference number 461598. The information contained with
+                this website is subject to the UK regulatory regime and is
+                therefore targeted at consumers based in the UK. Registered
+                office: 2plan Wealth Management Ltd, 3rd Floor, Bridgewater
+                place, Water Lane, Leeds, LS11 5BZ. Registered in England and
+                Wales Number: 05998270
               </p>
             </div>
           </div>

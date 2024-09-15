@@ -224,6 +224,7 @@ a {
 
 .bg-off-white {
   background-color: #c6b8b8;
+  color: var(--color-black);
 }
 .rounded-md {
   border-radius: 4px;
@@ -384,8 +385,6 @@ nav.navigation-minimal .navigation-buttons {
 .navigation-menu.navigation-active .navigation-bar:nth-child(3) {
   transform: translateY(-10.5px) rotate(-45deg);
 }
-
-
 
 /* Heading */
 
@@ -676,6 +675,10 @@ footer img {
     flex-direction: column;
   }
 
+  .sm-block {
+    display: block !important;
+  }
+
   .landing-bullets-image {
     display: none;
   }
@@ -721,6 +724,10 @@ footer img {
   footer {
     justify-content: center;
     align-items: center;
+  }
+
+  .footer-cta-wrapper {
+    background-position: -460px -70px;
   }
 }
 
@@ -870,7 +877,7 @@ footer img {
   text-transform: uppercase;
 }
 
-.overlay-text-mortgages{ 
+.overlay-text-mortgages {
   max-width: 100%;
   position: absolute;
   bottom: 40%;
@@ -1030,12 +1037,12 @@ footer img {
   border: white;
   border-style: solid;
 }
-.about-us-quote p{
+.about-us-quote p {
   padding: 10px;
   font-size: 16px;
   
 }
-.names-of-quote p{
+.names-of-quote p {
   padding: 10px;
   text-align: center;
   font-size: 16px;
@@ -1308,24 +1315,21 @@ footer img {
     padding-bottom: 2%;
   }
 
-  .our-value-title h2{
+  .our-value-title h2 {
     font-size: 40px;
   }
 }
 
 /* How We Work Page */
 
-
 .hww-second-section {
   color: white;
 }
-
 
 .hww-grid-container {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  
 }
 .hww-grid-item {
   text-align: center;
@@ -1453,7 +1457,6 @@ footer img {
 }
 
 @media (max-width: 640px) {
-  
   .hww-grid-item-text h2 {
     /* font-family: var(--font-abel); */
     font-size: 32px;
@@ -1583,7 +1586,7 @@ footer img {
   opacity: 0.7;
 }
 
-.dog-on-sofa{
+.dog-on-sofa {
   opacity: 0.7;
 }
 .our-services-image {
@@ -1595,14 +1598,13 @@ footer img {
 .savings-image {
   opacity: 0.8;
 }
-.city-networks{
+.city-networks {
   opacity: 0.7;
 }
 
 .please-note-text {
   font-weight: 500;
 }
-
 
 @media (max-width: 900px) {
   .services-grid-container {
@@ -1696,16 +1698,16 @@ footer img {
   /* text-transform: lo; */
 }
 
-@media (max-width:800px){
-  .value-grid-card h3{
+@media (max-width: 800px) {
+  .value-grid-card h3 {
     font-size: 25px;
     /* font-size: clamp(1.25rem, 3vw, 1.75rem); */
     font-weight: 500;
     /* text-transform: lo; */
   }
 }
-@media (max-width:500px){
-  .value-grid-card h3{
+@media (max-width: 500px) {
+  .value-grid-card h3 {
     font-size: 16px;
     /* font-size: clamp(1.25rem, 3vw, 1.75rem); */
     font-weight: 500;
@@ -1760,6 +1762,7 @@ footer img {
 
 input,
 textarea,
+select,
 button[type="submit"] {
   padding: 0.5rem;
 }
@@ -1787,3 +1790,6 @@ textarea {
   max-width: min(400px, 50%);
 }
 
+.z-index-5 {
+  z-index: 5;
+}
