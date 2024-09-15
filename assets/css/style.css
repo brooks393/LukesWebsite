@@ -1006,6 +1006,25 @@ footer img {
   border-radius: 4px;
 }
 
+.quotes{
+  background-color: rgb(95, 87, 71);;
+  /* height: 100px; */
+  margin: 2px;
+  padding: 5px;
+  border: white;
+  border-style: solid;
+  /* justify-content: center; */
+}
+.about-us-quote p{
+  padding: 10px;
+  font-size: 16px;
+}
+.names-of-quote p{
+  padding: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
 @media (max-width: 460px) {
   .about-words h1 {
     font-size: 32px;
