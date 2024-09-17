@@ -1048,7 +1048,13 @@ footer img {
   font-size: 16px;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 620px) {
+  .about-words h1{
+    font-size: 50px;
+  }
+  .quotes-div h3 {
+    font-size: 28px
+  }
   .quotes-box{
     background-color: rgb(95, 87, 71);;
     margin: 2px;
@@ -1075,7 +1081,10 @@ footer img {
 
 @media (max-width: 460px) {
   .about-words h1 {
-    font-size: 32px;
+    font-size: 40px;
+  }
+  .quotes-div h3 {
+    font-size: 24px;
   }
 }
 
